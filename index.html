@@ -1,0 +1,1865 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="The 80 — Executive Summary. The front matter of the donor book: the case, two proof points, the operating model, and the ask.">
+<meta property="og:title" content="The 80 — Executive Summary">
+<meta property="og:description" content="Building the machine Democrats never built. A 501(c)(4) investment vehicle for permanent, multi-state political infrastructure.">
+<meta property="og:type" content="article">
+<title>The 80 — Executive Summary</title>
+<style>
+:root{color-scheme:light dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ground:#ffffff;
+  --surface:#f7f7f8;
+  --surface-2:#f0f0f2;
+  --border:#e3e3e6;
+  --border-2:#d3d3d8;
+  --ink:#16161a;
+  --ink-2:#55555c;
+  --ink-3:#86868e;
+  --accent:#1a5cff;
+  --accent-soft:#eef3ff;
+  --accent-line:#cfddff;
+  --terra:#a84b2f;
+  --terra-soft:#faf0ec;
+  --terra-line:#e8cdc2;
+  --good:#0e7a3d;
+  --good-soft:#ecf7f0;
+  --warn:#8a5a00;
+  --warn-soft:#fdf4e3;
+  /* validated chart series — light */
+  --s1:#1a5cff;
+  --s2:#a84b2f;
+  --seq-1:#1a5cff;
+  --seq-2:#5c8eff;
+  --seq-3:#a8c2ff;
+  --grid:#e6e6ea;
+  --bar-n:#9a9aa4;
+  --r:10px;
+  --maxw:1180px;
+  --prose:66ch;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#141416; --surface:#1c1c1f; --surface-2:#232327;
+    --border:#2e2e33; --border-2:#3b3b42;
+    --ink:#f2f2f3; --ink-2:#a9a9b1; --ink-3:#7a7a83;
+    --accent:#6f9bff; --accent-soft:#16233f; --accent-line:#2c4478;
+    --terra:#d9805c; --terra-soft:#2c1c16; --terra-line:#5a3325;
+    --good:#4cbc7b; --good-soft:#12261a; --warn:#d9a441; --warn-soft:#2a2113;
+    --s1:#4f86fa; --s2:#c9633c;
+    --seq-1:#4f86fa; --seq-2:#3a63b8; --seq-3:#2a4278;
+    --grid:#2b2b31;
+  --bar-n:#7f7f8a;
+    --bar-n:#7f7f8a;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#141416; --surface:#1c1c1f; --surface-2:#232327;
+  --border:#2e2e33; --border-2:#3b3b42;
+  --ink:#f2f2f3; --ink-2:#a9a9b1; --ink-3:#7a7a83;
+  --accent:#6f9bff; --accent-soft:#16233f; --accent-line:#2c4478;
+  --terra:#d9805c; --terra-soft:#2c1c16; --terra-line:#5a3325;
+  --good:#4cbc7b; --good-soft:#12261a; --warn:#d9a441; --warn-soft:#2a2113;
+  --s1:#4f86fa; --s2:#c9633c;
+  --seq-1:#4f86fa; --seq-2:#3a63b8; --seq-3:#2a4278;
+  --grid:#2b2b31;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Source Serif 4","Iowan Old Style",Georgia,serif;
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.ui,h1,h2,h3,h4,nav,th,.label,.folio,.stat,.chap,.tag,figcaption,table,.meta{
+  font-family:"Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+a{color:var(--accent)}
+img,svg{max-width:100%}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ============ CHROME ============ */
+.topbar{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:60;
+  background:color-mix(in srgb,var(--ground) 92%,transparent);
+  backdrop-filter:saturate(1.6) blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.topbar .inner{
+  max-width:var(--maxw);margin:0 auto;padding:9px 24px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.wordmark{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
+.wordmark span{color:var(--ink-3);font-weight:600}
+.pager{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+.pager a{
+  font-size:11.5px;font-weight:600;letter-spacing:.03em;color:var(--ink-3);
+  text-decoration:none;padding:4px 9px;border-radius:6px;white-space:nowrap;
+}
+.pager a:hover{color:var(--accent);background:var(--accent-soft)}
+.pager a.on{color:var(--ink);background:var(--surface-2)}
+.progress{height:2px;background:var(--accent);width:0;transition:width .12s linear}
+
+/* ---- group tabs (row 1 of the top bar) ---- */
+.groups{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.groups a{
+  font-family:"Libre Franklin",sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.02em;
+  color:var(--ink-2);text-decoration:none;padding:5px 11px;border-radius:7px;white-space:nowrap;
+  border:1px solid transparent;
+}
+.groups a:hover{color:var(--accent);background:var(--accent-soft)}
+.groups a.on{background:var(--ink);color:var(--ground);border-color:var(--ink)}
+.barrow{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.barrow+.barrow{margin-top:7px;padding-top:7px;border-top:1px solid var(--border)}
+
+/* ---- left rail ---- */
+.rail{
+  position:fixed;left:18px;top:calc(env(safe-area-inset-top,0px) + 132px);width:186px;z-index:45;
+  display:none;max-height:calc(100vh - 190px);overflow-y:auto;padding-right:6px;
+}
+@media (min-width:1620px){.rail{display:block}}
+.rail.hide{display:none}
+.rail .rg{margin-bottom:15px}
+.rail .rgh{
+  font-family:"Libre Franklin",sans-serif;font-size:9.5px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-3);margin-bottom:6px;padding-left:9px;
+}
+.rail a{
+  display:block;font-family:"Libre Franklin",sans-serif;font-size:12px;font-weight:600;
+  color:var(--ink-3);text-decoration:none;padding:4px 9px;border-left:2px solid var(--border);
+  line-height:1.35;
+}
+.rail a:hover{color:var(--accent);border-left-color:var(--accent-line)}
+.rail a.on{color:var(--ink);border-left-color:var(--accent);background:var(--surface)}
+.rail .rtop{
+  margin-top:6px;font-family:"Libre Franklin",sans-serif;font-size:11px;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);border:1px solid var(--border);
+  background:var(--ground);border-radius:7px;padding:6px 10px;cursor:pointer;width:100%;text-align:left;
+}
+.rail .rtop:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ---- floating return-home (narrow screens) ---- */
+.totop{
+  position:fixed;right:18px;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:55;
+  font-family:"Libre Franklin",sans-serif;font-size:12px;font-weight:700;letter-spacing:.04em;
+  background:var(--ink);color:var(--ground);border:none;border-radius:999px;padding:9px 15px;
+  cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.18);opacity:0;pointer-events:none;transition:opacity .18s;
+}
+.totop.show{opacity:1;pointer-events:auto}
+@media (min-width:1620px){.totop{display:none}}
+
+/* ---- gated (second code) blocks ---- */
+.locked{border:1px solid var(--border-2);border-radius:var(--r);background:var(--surface);padding:22px 24px;margin:24px 0}
+.locked .lk{font-family:"Libre Franklin",sans-serif;font-size:10.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--warn);margin-bottom:8px}
+.locked h4{margin-bottom:6px;color:var(--ink);font-size:14px;letter-spacing:0;text-transform:none;font-weight:700}
+.locked p{font-size:15px;margin-bottom:14px}
+.locked form{display:flex;gap:8px;flex-wrap:wrap;max-width:420px}
+.locked input{flex:1 1 190px;min-width:0;font-family:"Libre Franklin",sans-serif;font-size:14px;padding:9px 12px;border:1px solid var(--border-2);border-radius:8px;background:var(--ground);color:var(--ink)}
+.locked button{font-family:"Libre Franklin",sans-serif;font-size:13px;font-weight:700;padding:9px 18px;border:1px solid var(--accent);border-radius:8px;background:var(--accent);color:#fff;cursor:pointer}
+.locked .lerr{font-family:"Libre Franklin",sans-serif;font-size:12.5px;font-weight:600;color:var(--terra);margin-top:10px;min-height:18px}
+
+/* ---- model-state calculator ---- */
+.calc{border:1px solid var(--border);border-radius:var(--r);background:var(--surface);padding:22px 24px;margin:22px 0}
+.calc .ch{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:16px}
+.calc .ck{font-family:"Libre Franklin",sans-serif;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.calc .clive{font-family:"Libre Franklin",sans-serif;font-size:11.5px;font-weight:600;color:var(--accent)}
+.crow+.crow{margin-top:16px;padding-top:16px;border-top:1px solid var(--border)}
+.crow label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-family:"Libre Franklin",sans-serif;font-size:15px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.crow .cv{font-family:"Libre Franklin",sans-serif;font-size:19px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.crow input[type=range]{width:100%;accent-color:var(--accent);margin:2px 0}
+.crow .chint{font-family:"Libre Franklin",sans-serif;font-size:11.5px;color:var(--ink-3);line-height:1.5;margin-top:3px}
+.ctot{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:18px;padding:16px 20px;border-radius:9px;border:1px solid var(--accent-line);background:var(--accent-soft)}
+.ctot .ctl{font-family:"Libre Franklin",sans-serif;font-size:11.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--accent)}
+.ctot .ctv{font-family:"Libre Franklin",sans-serif;font-size:36px;font-weight:800;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+@media (max-width:480px){.ctot .ctv{font-size:27px}}
+@media (max-width:720px){.pager{display:none}}
+
+/* ============ PAGE SHELL ============ */
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:24px}
+.page{padding-block:60px 12px}
+.page:last-of-type{padding-bottom:70px}
+.folio{
+  display:flex;align-items:baseline;gap:14px;
+  border-top:2px solid var(--ink);padding-top:9px;margin-bottom:34px;
+}
+.folio .no{
+  font-size:11px;font-weight:800;letter-spacing:.18em;color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.folio .nm{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+.folio .of{margin-left:auto;font-size:11px;font-weight:500;color:var(--ink-3);font-variant-numeric:tabular-nums}
+
+h1{font-size:clamp(30px,4.4vw,46px);line-height:1.08;font-weight:800;letter-spacing:-.022em;text-wrap:balance;margin-bottom:18px}
+h2{font-size:clamp(23px,3vw,31px);line-height:1.16;font-weight:700;letter-spacing:-.016em;text-wrap:balance;margin-bottom:16px}
+h3{font-size:17px;font-weight:700;letter-spacing:-.005em;margin:30px 0 8px}
+h4{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:10px}
+p{margin-bottom:15px;max-width:var(--prose)}
+p.lead{font-size:20px;line-height:1.5;color:var(--ink-2);margin-bottom:22px}
+.prose{max-width:var(--prose)}
+.dek{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);margin-bottom:12px}
+strong{font-weight:600;color:var(--ink)}
+em{font-style:italic}
+hr{border:none;border-top:1px solid var(--border);margin:34px 0}
+
+/* ============ COVER ============ */
+.cover{padding-block:clamp(32px,6vw,74px) 10px}
+.stamp{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid var(--terra-line);background:var(--terra-soft);color:var(--terra);
+  font-family:"Libre Franklin",sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:26px;
+}
+.stamp .dot{width:5px;height:5px;border-radius:999px;background:var(--terra)}
+.cover-title{
+  font-family:"Libre Franklin",sans-serif;font-weight:800;
+  font-size:clamp(52px,12vw,124px);line-height:.86;letter-spacing:-.045em;margin-bottom:22px;
+}
+.cover-title .sub{display:block;font-size:clamp(20px,3.4vw,38px);line-height:1.08;letter-spacing:-.025em;margin-top:16px;max-width:17ch}
+.cover-title .sub b{color:var(--accent);font-weight:800}
+.cover-meta{
+  display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline;
+  font-family:"Libre Franklin",sans-serif;font-size:12px;font-weight:600;
+  letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);
+  border-top:1px solid var(--border);padding-top:14px;margin-top:30px;
+}
+.cover-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:44px;align-items:start;margin-top:36px}
+@media (max-width:900px){.cover-grid{grid-template-columns:1fr;gap:30px}}
+
+/* ============ STATS ============ */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin:28px 0}
+.stats>div{padding:17px 18px;border-right:1px solid var(--border);background:var(--surface)}
+.stats>div:last-child{border-right:none}
+@media (max-width:820px){
+  .stats{grid-template-columns:1fr}
+  .stats>div{border-right:none;border-bottom:1px solid var(--border)}
+  .stats>div:last-child{border-bottom:none}
+}
+@media (max-width:420px){
+  .stats{grid-template-columns:1fr}
+  .stats>div{border-right:none;border-bottom:1px solid var(--border)}
+  .stats>div:last-child{border-bottom:none}
+}
+.stat .v{font-size:31px;font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums;display:block}
+.stat .v.a{color:var(--accent)}
+.stat .l{font-size:11.5px;font-weight:600;color:var(--ink-3);margin-top:7px;line-height:1.35;display:block}
+
+/* ============ CALLOUTS ============ */
+.callout{
+  border:1px solid var(--border);border-left:3px solid var(--ink-3);
+  background:var(--surface);border-radius:0 var(--r) var(--r) 0;
+  padding:16px 20px;margin:26px 0;max-width:calc(var(--prose) + 6ch);
+}
+.callout .ct{
+  font-family:"Libre Franklin",sans-serif;font-size:11px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;color:var(--ink-3);
+}
+.callout p{margin-bottom:0;max-width:none;font-size:16px}
+.callout p+p{margin-top:10px}
+.callout.a{border-left-color:var(--accent);background:var(--accent-soft);border-color:var(--accent-line)}
+.callout.a .ct{color:var(--accent)}
+.callout.t{border-left-color:var(--terra);background:var(--terra-soft);border-color:var(--terra-line)}
+.callout.t .ct{color:var(--terra)}
+.callout.g{border-left-color:var(--good);background:var(--good-soft);border-color:color-mix(in srgb,var(--good) 30%,transparent)}
+.callout.g .ct{color:var(--good)}
+.callout.w{border-left-color:var(--warn);background:var(--warn-soft);border-color:color-mix(in srgb,var(--warn) 30%,transparent)}
+.callout.w .ct{color:var(--warn)}
+
+.pull{
+  border-top:2px solid var(--ink);border-bottom:1px solid var(--border);
+  padding:20px 0;margin:34px 0;max-width:38ch;
+}
+.pull q{quotes:none;font-size:clamp(21px,2.5vw,27px);line-height:1.22;font-weight:600;letter-spacing:-.015em;display:block;font-family:"Libre Franklin",sans-serif}
+.pull .src{font-family:"Libre Franklin",sans-serif;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-top:12px;display:block}
+.pull.right{float:right;margin:8px 0 24px 40px}
+@media (max-width:860px){.pull.right{float:none;margin:34px 0;max-width:none}}
+
+/* ============ CARDS / GRIDS ============ */
+.grid{display:grid;gap:16px;margin:22px 0}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.g3,.g4{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{border:1px solid var(--border);border-radius:var(--r);padding:18px 20px;background:var(--ground)}
+.card.fill{background:var(--surface)}
+.card h4{margin-bottom:8px}
+.card p{font-size:15.5px;margin-bottom:0;max-width:none}
+.card p+p{margin-top:9px}
+.card .idx{
+  font-family:"Libre Franklin",sans-serif;font-size:11px;font-weight:800;
+  letter-spacing:.1em;color:var(--accent);font-variant-numeric:tabular-nums;display:block;margin-bottom:7px;
+}
+.card .hd{font-family:"Libre Franklin",sans-serif;font-weight:700;font-size:15.5px;letter-spacing:-.008em;margin-bottom:6px;display:block}
+
+ul,ol{margin:0 0 15px 0;max-width:var(--prose)}
+ul.tick{list-style:none}
+ul.tick li{position:relative;padding-left:24px;margin-bottom:9px}
+ul.tick li::before{content:"";position:absolute;left:2px;top:.62em;width:9px;height:9px;border:1.5px solid var(--accent);border-radius:2px}
+ul.bare{list-style:none}
+ul.bare li{position:relative;padding-left:20px;margin-bottom:8px}
+ul.bare li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:1.5px;background:var(--ink-3)}
+ol.num{list-style:none;counter-reset:n}
+ol.num li{position:relative;padding-left:34px;margin-bottom:13px;counter-increment:n}
+ol.num li::before{
+  content:counter(n,decimal-leading-zero);position:absolute;left:0;top:.15em;
+  font-family:"Libre Franklin",sans-serif;font-size:11px;font-weight:800;color:var(--accent);
+  letter-spacing:.06em;font-variant-numeric:tabular-nums;
+}
+
+/* ============ TABLES ============ */
+.tw{overflow-x:auto;border:1px solid var(--border);border-radius:var(--r);margin:22px 0}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:540px}
+th{
+  text-align:left;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);padding:11px 16px;background:var(--surface);border-bottom:1px solid var(--border);
+  vertical-align:bottom;
+}
+td{padding:13px 16px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--ink-2)}
+tr:last-child td{border-bottom:none}
+td strong{color:var(--ink)}
+tr.tone-success td{background:var(--good-soft)}
+tr.tone-warning td{background:var(--warn-soft)}
+tr.tone-info td{background:var(--accent-soft)}
+tr.tone-success td:first-child{box-shadow:inset 3px 0 0 var(--good)}
+tr.tone-warning td:first-child{box-shadow:inset 3px 0 0 var(--warn)}
+tr.tone-info td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+
+/* ============ FIGURES ============ */
+figure{margin:30px 0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:var(--ground)}
+figure .fh{padding:16px 20px 12px;border-bottom:1px solid var(--border);background:var(--surface)}
+figure .fn{font-family:"Libre Franklin",sans-serif;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:5px}
+figure .ft{font-family:"Libre Franklin",sans-serif;font-size:16.5px;font-weight:700;letter-spacing:-.012em;line-height:1.25;display:block;color:var(--ink)}
+figure .fs{font-size:14px;color:var(--ink-2);margin-top:6px;display:block;max-width:74ch;line-height:1.5}
+figure .fb{padding:22px 20px}
+figcaption{padding:11px 20px 14px;border-top:1px solid var(--border);font-size:11.5px;color:var(--ink-3);line-height:1.5;background:var(--surface)}
+figcaption b{color:var(--ink-2);font-weight:600}
+.chart{width:100%;height:auto;display:block;overflow:visible}
+.chart text{font-family:"Libre Franklin",sans-serif}
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;margin-bottom:16px;font-family:"Libre Franklin",sans-serif;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:13px;height:3px;border-radius:2px;display:inline-block;flex-shrink:0}
+.schematic{
+  display:inline-block;font-family:"Libre Franklin",sans-serif;font-size:10px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--warn);
+  background:var(--warn-soft);border:1px solid color-mix(in srgb,var(--warn) 30%,transparent);
+  padding:3px 9px;border-radius:999px;margin-top:8px;
+}
+
+/* ============ TIMELINE ============ */
+.tl{list-style:none;margin:22px 0;max-width:none;position:relative;padding-left:0}
+.tl li{display:grid;grid-template-columns:78px 1fr;gap:18px;padding-bottom:20px;position:relative}
+.tl li::before{content:"";position:absolute;left:87px;top:12px;bottom:-8px;width:1.5px;background:var(--border-2)}
+.tl li:last-child::before{display:none}
+.tl .yr{
+  font-family:"Libre Franklin",sans-serif;font-size:14px;font-weight:800;letter-spacing:-.01em;
+  font-variant-numeric:tabular-nums;text-align:right;padding-top:1px;color:var(--ink);
+}
+.tl .bd{position:relative;padding-left:20px}
+.tl .bd::before{content:"";position:absolute;left:-9.5px;top:8px;width:11px;height:11px;border-radius:999px;background:var(--accent);border:2.5px solid var(--ground)}
+.tl li.miss .bd::before{background:var(--terra)}
+.tl li.miss .yr{color:var(--terra)}
+.tl .hd{font-family:"Libre Franklin",sans-serif;font-weight:700;font-size:15.5px;display:block;margin-bottom:3px}
+.tl p{font-size:15.5px;margin-bottom:0;max-width:62ch}
+@media (max-width:560px){
+  .tl li{grid-template-columns:56px 1fr;gap:12px}
+  .tl li::before{left:62px}
+}
+
+/* ============ CHAPTER LINKS ============ */
+.chapbar{
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  border:1px dashed var(--border-2);border-radius:var(--r);
+  padding:13px 17px;margin:26px 0;background:var(--surface);
+  font-family:"Libre Franklin",sans-serif;
+}
+.chapbar .ck{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3)}
+.chaplist{display:flex;flex-wrap:wrap;gap:8px}
+.chap{
+  display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+  border:1px solid var(--border);border-radius:999px;padding:5px 13px 5px 11px;
+  background:var(--ground);font-size:13px;font-weight:600;color:var(--ink);
+}
+.chap .cn{font-size:10.5px;font-weight:800;letter-spacing:.08em;color:var(--ink-3);font-variant-numeric:tabular-nums}
+a.chap:hover{border-color:var(--accent);color:var(--accent)}
+a.chap:hover .cn{color:var(--accent)}
+.chap .cs{
+  font-size:9.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  padding:2px 7px;border-radius:999px;background:var(--surface-2);color:var(--ink-3);
+}
+.chap.live .cs{background:var(--good-soft);color:var(--good)}
+.chap.todo{border-style:dashed;color:var(--ink-3);cursor:default}
+.chap.todo .cs{background:var(--warn-soft);color:var(--warn)}
+
+/* contents table on last page */
+.toc{list-style:none;margin:24px 0;max-width:none;border-top:1px solid var(--border)}
+.toc li{border-bottom:1px solid var(--border)}
+.toc a,.toc .row{
+  display:grid;grid-template-columns:62px 1fr auto;gap:18px;align-items:baseline;
+  padding:15px 4px;text-decoration:none;color:inherit;font-family:"Libre Franklin",sans-serif;
+}
+.toc a:hover{background:var(--accent-soft)}
+.toc .cn{font-size:11.5px;font-weight:800;letter-spacing:.09em;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.toc a:hover .cn{color:var(--accent)}
+.toc .tt{font-size:16px;font-weight:700;letter-spacing:-.01em}
+.toc .td{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:400;font-size:14.5px;color:var(--ink-2);margin-top:3px;letter-spacing:0;max-width:62ch}
+.toc .cs{font-size:9.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink-3);white-space:nowrap}
+.toc li.live .cs{background:var(--good-soft);color:var(--good)}
+.toc li.prod .cs{background:var(--warn-soft);color:var(--warn)}
+.toc li.this .cs{background:var(--accent-soft);color:var(--accent)}
+.toc li.sep{background:var(--surface)}
+.toc li.sep .row{grid-template-columns:1fr;padding:12px 4px}
+.toc .seplabel{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.toc .seplabel span{font-family:"Source Serif 4",Georgia,serif;font-weight:400;letter-spacing:0;text-transform:none;color:var(--ink-3);font-size:14px}
+@media (max-width:620px){
+  .toc a,.toc .row{grid-template-columns:48px 1fr;gap:12px}
+  .toc .cs{grid-column:2;justify-self:start;margin-top:8px}
+}
+
+/* ============ FOOTER ============ */
+.disclosure{
+  border-top:2px solid var(--ink);margin-top:52px;padding-top:20px;
+  font-size:13px;line-height:1.6;color:var(--ink-3);
+}
+.disclosure p{max-width:88ch;margin-bottom:10px;font-size:13px}
+.disclosure strong{color:var(--ink-2)}
+
+/* ============ PRINT ============ */
+@media print{
+  .topbar,.chapbar{display:none}
+  body{font-size:11pt;background:#fff;color:#000}
+  .page{page-break-before:always;padding-block:0 0}
+  .cover{page-break-before:avoid}
+  figure,.callout,.pull,.card,.tl li{page-break-inside:avoid}
+  a{color:#000;text-decoration:none}
+}
+</style>
+
+<style>
+/* ===== access gate (this hosted copy only) ===== */
+/* the hidden attribute must beat every rule below, including #id selectors */
+[hidden]{display:none!important}
+#gate{
+  position:fixed;inset:0;z-index:999;background:var(--ground);
+  display:flex;align-items:center;justify-content:center;padding:24px;
+}
+#gate .box{width:100%;max-width:430px}
+#gate .stamp{margin-bottom:22px}
+#gate h1{
+  font-family:"Libre Franklin",sans-serif;font-weight:800;
+  font-size:clamp(40px,11vw,68px);line-height:.88;letter-spacing:-.04em;margin-bottom:14px;
+}
+#gate .sub{
+  font-family:"Source Serif 4",Georgia,serif;font-size:17px;line-height:1.5;
+  color:var(--ink-2);margin-bottom:26px;
+}
+#gate form{display:flex;gap:8px;flex-wrap:wrap}
+#gate input{
+  flex:1 1 200px;min-width:0;font-family:"Libre Franklin",sans-serif;font-size:15px;
+  padding:11px 14px;border:1px solid var(--border-2);border-radius:8px;
+  background:var(--surface);color:var(--ink);
+}
+#gate input::placeholder{color:var(--ink-3)}
+#gate button{
+  font-family:"Libre Franklin",sans-serif;font-size:14px;font-weight:700;letter-spacing:.02em;
+  padding:11px 22px;border:1px solid var(--accent);border-radius:8px;
+  background:var(--accent);color:#fff;cursor:pointer;
+}
+#gate button:hover{filter:brightness(1.08)}
+#gate .err{
+  font-family:"Libre Franklin",sans-serif;font-size:13px;font-weight:600;color:var(--terra);
+  margin-top:14px;min-height:19px;
+}
+#gate .foot{
+  font-family:"Libre Franklin",sans-serif;font-size:11.5px;line-height:1.55;color:var(--ink-3);
+  border-top:1px solid var(--border);margin-top:30px;padding-top:14px;
+}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="box">
+    <div class="stamp"><span class="dot"></span>Confidential — not for distribution</div>
+    <h1>THE&nbsp;80</h1>
+    <p class="sub">The executive summary and donor book are available to invited readers. Enter the access phrase to continue.</p>
+    <p class="foot" style="border:none;margin:0 0 20px;padding:0;font-size:11.5px">
+      <strong style="color:var(--ink-2)">Coverage for total book</strong> &nbsp;·&nbsp; Version 2.0 &nbsp;·&nbsp; 25 September 2026<br>
+      Executive Summary · Model State · Research &amp; Policy · Go Deeper · Operations &amp; Financing
+    </p>
+    <form id="gate-form" autocomplete="off">
+      <input id="gate-input" type="password" placeholder="Access phrase" aria-label="Access phrase" autocomplete="current-password">
+      <button type="submit">Continue</button>
+    </form>
+    <div class="err" id="gate-err" role="status" aria-live="polite"></div>
+    <p class="foot">If you need access, contact The 80 directly. Do not forward this link.</p>
+  </div>
+</div>
+
+<div id="doc" hidden>
+<div class="topbar">
+  <div class="inner">
+    <div class="barrow" style="width:100%">
+      <div class="wordmark">The 80 <span>/ Donor Book</span></div>
+      <nav class="groups" id="groups">
+        <a href="#cover" data-g="front">Cover</a>
+        <a href="#stakes" data-g="exec">01 Executive Summary</a>
+        <a href="#modelstate" data-g="model">02 Model State</a>
+        <a href="#focus" data-g="research">Research &amp; Policy</a>
+        <a href="#deeper" data-g="deeper">Go Deeper</a>
+        <a href="#ops" data-g="ops">Operations &amp; Financing</a>
+      </nav>
+    </div>
+    <div class="barrow" style="width:100%">
+      <nav class="pager" id="pager"></nav>
+    </div>
+  </div>
+  <div class="progress" id="prog"></div>
+</div>
+
+<aside class="rail" id="rail" aria-label="Section navigation"></aside>
+<button class="totop" id="totop" type="button">&uarr; Contents</button>
+
+<main>
+
+<!-- ══════════════════════ COVER ══════════════════════ -->
+<section class="wrap cover" id="cover">
+  <div class="stamp"><span class="dot"></span>Confidential donor framework — not for distribution</div>
+
+  <div class="cover-grid">
+    <div>
+      <h1 class="cover-title">THE&nbsp;80
+        <span class="sub">Building the machine <b>Democrats never built.</b></span>
+      </h1>
+      <p class="lead" style="max-width:52ch">A 501(c)(4) investment vehicle for permanent, multi-state political infrastructure — capital that behaves like an investor's, not a donor's.</p>
+      <div class="cover-meta">
+        <span>Executive Summary</span>
+        <span>Version 2.0 · September 2026</span>
+        <span>REAL Action for America</span>
+      </div>
+    </div>
+
+    <div class="card fill">
+      <h4>The thesis in one paragraph</h4>
+      <p style="font-size:16.5px;font-family:'Source Serif 4',Georgia,serif;line-height:1.55">The American right did not out-organize the center-left in a single election cycle. It built institutions across six decades that outlasted every candidate and every loss. The center-left has never built the equivalent. <strong>The gap is not a messaging gap. It is an infrastructure gap.</strong> The 80 exists to close it, state by state, on a multi-cycle horizon.</p>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span class="v">$1.5M</span><span class="l">Committed to date</span></div>
+    <div class="stat"><span class="v a">$30M</span><span class="l">Raise now underway</span></div>
+    <div class="stat"><span class="v">2</span><span class="l">Independent proof points for the model</span></div>
+  </div>
+
+  <h4 style="margin-top:30px">What the money buys</h4>
+  <p class="prose" style="max-width:74ch">The 80 invests along <strong>three directions at once</strong> — and then repeats that combination state by state. A donor is not funding one program; they are funding the combination, in a specific place, for multiple cycles.</p>
+
+  <div class="grid g3">
+    <div class="card"><span class="idx">DIRECTION 01</span><span class="hd">Civic &amp; Political</span><p>Permanent field organizing, candidate recruitment and training, and local party rebuilding.</p></div>
+    <div class="card"><span class="idx">DIRECTION 02</span><span class="hd">The 80 Engine</span><p>Research, narrative, creative and distribution — the shared communications capability every state draws on.</p></div>
+    <div class="card"><span class="idx">DIRECTION 03</span><span class="hd">Investment Strategy</span><p>The capital process itself: how states are selected, how builds are staged, and how each dollar is held to a result.</p></div>
+  </div>
+
+  <div class="callout a">
+    <div class="ct">How to read this document</div>
+    <p>This is the executive summary of a donor book. The chapters below contain research, legal architecture, capital strategy, hiring schedule, and state-by-state budgets. Each section links to the corresponding chapters.</p>
+  </div>
+
+  <div class="pull" style="max-width:52ch;margin:34px 0 26px">
+    <q>The majority already exists. It needs a platform. We hope you will help us build it.</q>
+    <span class="src">The 80</span>
+  </div>
+
+  <div class="prose">
+    <h3>What the name means</h3>
+    <p>Our name claims the <strong>eighty percent of Americans who agree on the majority of policy</strong> and want the same handful of things. That common ground runs through most of the Democratic Party. It lives in the center-left, and it includes independents, moderates, and a great many people who tuned out because nothing on offer sounded like them.</p>
+  </div>
+
+  <div class="grid g4">
+    <div class="card"><span class="idx">01</span><span class="hd">Affordability</span><p>An affordable path to live their lives.</p></div>
+    <div class="card"><span class="idx">02</span><span class="hd">Safety</span><p>Safety from threats at home and abroad.</p></div>
+    <div class="card"><span class="idx">03</span><span class="hd">Competent government</span><p>Trust that government works and is not for sale.</p></div>
+    <div class="card"><span class="idx">04</span><span class="hd">A real shot</span><p>Confidence that their children have one.</p></div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CONTENTS (front matter) ══════════════════════ -->
+<section class="wrap page" id="book">
+  <div class="folio"><span class="nm">Contents</span><span class="of">The Donor Book</span></div>
+
+  <div class="dek">Contents</div>
+  <h2>What follows is not a pitch in prose. It is the plan itself.</h2>
+
+  <ul class="toc">
+    <li class="this">
+      <div class="row">
+        <span class="cn">01</span>
+        <span><span class="tt">Executive Summary</span><span class="td">The case, the two proof points, the opposition, the operating model, and the ask.</span></span>
+        <span class="cs">You are here</span>
+      </div>
+    </li>
+    <li class="live">
+      <a href="#modelstate">
+        <span class="cn">02</span>
+        <span><span class="tt">Model State</span><span class="td">The state template: what one state costs, built from the bottom up, and how it repeats.</span></span>
+        <span class="cs">In this book</span>
+      </a>
+    </li>
+    <li class="sep">
+      <div class="row">
+        <span class="seplabel">Model State detail <span>— the two chapters behind the template</span></span>
+      </div>
+    </li>
+    <li class="prod">
+      <a href="#" data-chapter="02.1" aria-disabled="true">
+        <span class="cn">02.1</span>
+        <span><span class="tt">State Selection &amp; Sequencing</span><span class="td">The four criteria applied, the three tracks, and how the funding sequence is set.</span></span>
+        <span class="cs">In production</span>
+      </a>
+    </li>
+    <li class="prod">
+      <a href="#" data-chapter="02.2" aria-disabled="true">
+        <span class="cn">02.2</span>
+        <span><span class="tt">State Models — Pilot First</span><span class="td">Fully costed models per state: organizer counts, regional-lead management layers, phased budgets, and timelines.</span></span>
+        <span class="cs">In production</span>
+      </a>
+    </li>
+    <li class="sep">
+      <div class="row">
+        <span class="seplabel">Go Deeper <span>— what each function is, and what it costs</span></span>
+      </div>
+    </li>
+    <li class="prod">
+      <a href="#" data-chapter="03" aria-disabled="true">
+        <span class="cn">03</span>
+        <span><span class="tt">Civic &amp; Political</span><span class="td">Permanent field organizing, candidate recruitment and training, local party rebuilding, and The Chairs Project.</span></span>
+        <span class="cs">In production</span>
+      </a>
+    </li>
+    <li class="prod">
+      <a href="#" data-chapter="04" aria-disabled="true">
+        <span class="cn">04</span>
+        <span><span class="tt">Investment Strategy</span><span class="td">How states are selected, how builds are staged, and how The 80 partners with or acquires existing infrastructure rather than duplicating it.</span></span>
+        <span class="cs">In production</span>
+      </a>
+    </li>
+    <li class="live">
+      <a href="https://claude.ai/artifact/TKMieGDahzwwgc8UwzzzBY" target="_blank" rel="noopener">
+        <span class="cn">05</span>
+        <span><span class="tt">The 80 Engine</span><span class="td">The permanent communications operation — research, narrative, creative, content, media and technology, with the full staffing budget.</span></span>
+        <span class="cs">Live</span>
+      </a>
+    </li>
+    <li class="live">
+      <a href="https://julesstephanie-cpu.github.io/eighty-influencer/#brief" target="_blank" rel="noopener">
+        <span class="cn">06</span>
+        <span><span class="tt">The Influencer Network</span><span class="td">The advocate and creator network — recruitment, consent architecture, briefings, amplification thresholds, and the 90-day launch plan.</span></span>
+        <span class="cs">Live</span>
+      </a>
+    </li>
+    <li class="sep">
+      <div class="row">
+        <span class="seplabel">Research &amp; Operations <span>— the evidence base and the machinery</span></span>
+      </div>
+    </li>
+    <li class="live">
+      <a href="#focus">
+        <span class="cn">07</span>
+        <span><span class="tt">Research &amp; Public Opinion</span><span class="td">The six focus states, the 80% Agenda, and the Democratic Brand Tracker baseline.</span></span>
+        <span class="cs">In this book</span>
+      </a>
+    </li>
+    <li class="live">
+      <a href="#ops">
+        <span class="cn">08</span>
+        <span><span class="tt">Operations &amp; Financing</span><span class="td">Budget and ROI, team and governance, and legal and compliance — in one place.</span></span>
+        <span class="cs">In this book</span>
+      </a>
+    </li>
+  </ul>
+
+  <p class="lead prose" style="margin-top:6px">The chapters above are the plan. This summary is the case for reading them.</p>
+
+  <div class="disclosure">
+    <p><strong>Disclosure.</strong> This document is for internal and donor-facing informational purposes. Contributions to REAL Action for America (The 80) support activities that further educational and social welfare purposes but may be used to support partisan political activities. <strong>Contributions to 501(c)(4) organizations are not deductible for federal income tax purposes as charitable contributions.</strong></p>
+    <p>Confidential donor framework — not for distribution. Figures describing The 80's capital position, team, and field activity are as reported by the organization. Historical claims regarding Michigan and Colorado are drawn from The 80 / C4 Framework V2 and, for Colorado, from <i>The Blueprint: How the Democrats Won Colorado</i> (2010). Figure 4 is a schematic illustration of the phased model described in the text and does not plot measured data.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════ 01 · THE STAKES ══════════════════════ -->
+<section class="wrap page" id="stakes">
+  <div class="folio"><span class="no">01</span><span class="nm">The Stakes</span><span class="of">Executive Summary · 1 of 7</span></div>
+
+  <div class="dek">Why this is urgent</div>
+  <h2>We can win this November and still be standing at the starting line in 2030</h2>
+
+  <div class="prose">
+    <p class="lead">Every two years, Democratic operatives build campaigns for candidates and then take them apart. Staff moves on. Data goes stale. Relationships are built, then gone before the next campaign starts.</p>
+    <p>The other side spent fifty years building institutions that were never meant to come down. You can see the results in the courts, in school boards, and in state houses. Five organizations — founded across six decades, every one still operating — form a compounding machine. No single donation built it. No single election broke it.</p>
+  </div>
+
+  <figure>
+    <div class="fh">
+      <span class="fn">Figure 1</span>
+      <span class="ft">Six decades of institutions that were never disbanded</span>
+      <span class="fs">Founding years of five enduring conservative organizations, plus the single largest political advocacy gift in U.S. history. Every institution shown is still operating today.</span>
+    </div>
+    <div class="fb">
+      <svg class="chart" viewBox="0 0 980 344" role="img" aria-label="Timeline from 1960 to 2030. Four conservative institutions are shown as duration bars running from their founding to the present: the American Conservative Union founded 1964, the Heritage Foundation 1973, the Federalist Society 1982, and Americans for Prosperity 2004. A fifth marker shows the 1.6 billion dollar Marble Freedom Trust gift in 2021. A lower band shows the center-left pattern of cycle-by-cycle rebuilds with no permanent institution.">
+        <!-- TODAY guide -->
+        <line x1="890" y1="36" x2="890" y2="228" stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="4 4"/>
+        <text x="890" y="28" font-size="10" font-weight="800" fill="var(--ink-3)" text-anchor="middle" letter-spacing="1.2">TODAY</text>
+
+        <!-- duration bars: founding → present -->
+        <g fill="var(--s2)" opacity=".2">
+          <rect x="110" y="52" width="780" height="8" rx="4"/>
+          <rect x="223" y="86" width="667" height="8" rx="4"/>
+          <rect x="337" y="120" width="553" height="8" rx="4"/>
+          <rect x="613" y="154" width="277" height="8" rx="4"/>
+        </g>
+        <g fill="var(--s2)">
+          <circle cx="110" cy="56" r="5.5"/><circle cx="223" cy="90" r="5.5"/>
+          <circle cx="337" cy="124" r="5.5"/><circle cx="613" cy="158" r="5.5"/>
+        </g>
+
+        <!-- institution labels, one per row -->
+        <g font-size="12.5" font-weight="700" fill="var(--ink)">
+          <text x="110" y="44"><tspan fill="var(--s2)">1964</tspan>  ·  American Conservative Union</text>
+          <text x="223" y="78"><tspan fill="var(--s2)">1973</tspan>  ·  Heritage Foundation</text>
+          <text x="337" y="112"><tspan fill="var(--s2)">1982</tspan>  ·  Federalist Society</text>
+          <text x="613" y="146"><tspan fill="var(--s2)">2004</tspan>  ·  Americans for Prosperity</text>
+        </g>
+
+        <!-- Marble Freedom Trust, 2021 -->
+        <circle cx="827" cy="194" r="7" fill="var(--s2)"/>
+        <line x1="827" y1="201" x2="827" y2="226" stroke="var(--s2)" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text x="812" y="190" font-size="13" font-weight="700" fill="var(--ink)" text-anchor="end">Marble Freedom Trust — <tspan fill="var(--s2)" font-size="17" font-weight="800">$1.6B</tspan></text>
+        <text x="812" y="207" font-size="11" font-weight="600" fill="var(--ink-3)" text-anchor="end">2021 · largest political advocacy gift in U.S. history</text>
+
+        <!-- axis -->
+        <line x1="60" y1="228" x2="940" y2="228" stroke="var(--ink-3)" stroke-width="1.5"/>
+        <g stroke="var(--grid)" stroke-width="1">
+          <line x1="186" y1="224" x2="186" y2="232"/><line x1="311" y1="224" x2="311" y2="232"/>
+          <line x1="437" y1="224" x2="437" y2="232"/><line x1="563" y1="224" x2="563" y2="232"/>
+          <line x1="689" y1="224" x2="689" y2="232"/><line x1="814" y1="224" x2="814" y2="232"/>
+        </g>
+        <g font-size="11" font-weight="600" fill="var(--ink-3)" text-anchor="middle">
+          <text x="60" y="250">1960</text><text x="186" y="250">1970</text><text x="311" y="250">1980</text>
+          <text x="437" y="250">1990</text><text x="563" y="250">2000</text><text x="689" y="250">2010</text>
+          <text x="814" y="250">2020</text><text x="940" y="250">2030</text>
+        </g>
+
+        <!-- center-left band -->
+        <text x="60" y="284" font-size="11" font-weight="800" fill="var(--ink-3)" letter-spacing="1.4">CENTER-LEFT EQUIVALENT</text>
+        <g stroke="var(--s1)" stroke-width="3" stroke-linecap="round" opacity=".8">
+          <line x1="60" y1="304" x2="105" y2="304"/><line x1="123" y1="304" x2="168" y2="304"/>
+          <line x1="186" y1="304" x2="231" y2="304"/><line x1="249" y1="304" x2="294" y2="304"/>
+          <line x1="311" y1="304" x2="356" y2="304"/><line x1="374" y1="304" x2="419" y2="304"/>
+          <line x1="437" y1="304" x2="482" y2="304"/><line x1="500" y1="304" x2="545" y2="304"/>
+          <line x1="563" y1="304" x2="608" y2="304"/><line x1="626" y1="304" x2="671" y2="304"/>
+          <line x1="689" y1="304" x2="734" y2="304"/><line x1="752" y1="304" x2="797" y2="304"/>
+          <line x1="814" y1="304" x2="859" y2="304"/><line x1="877" y1="304" x2="922" y2="304"/>
+        </g>
+        <text x="60" y="332" font-size="12.5" font-weight="600" fill="var(--ink-2)">Built for a cycle, defunded after a loss, rebuilt from scratch four years later — fourteen times over.</text>
+      </svg>
+    </div>
+    <figcaption><b>Source:</b> The 80 / C4 Framework V2, §1 (The Thesis). Duration bars run from each founding year to the present; all five organizations remain active. The center-left band is a schematic of the cycle-to-cycle funding pattern, not a count of specific organizations.</figcaption>
+  </figure>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="D" data-href=""><span class="cn">07</span>Research &amp; Public Opinion<span class="cs">In production</span></span>
+      <span class="chap todo" data-chapter="01" data-href=""><span class="cn">03</span>Civic &amp; Political<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 02 · THE GAP ══════════════════════ -->
+<section class="wrap page" id="gap">
+  <div class="folio"><span class="no">02</span><span class="nm">The Gap</span><span class="of">Executive Summary · 2 of 7</span></div>
+
+  <h3>Three structural problems have limited the effectiveness of the Democratic Party</h3>
+  <div class="grid g3">
+    <div class="card fill">
+      <span class="idx">PROBLEM 01</span>
+      <span class="hd">No national vehicle exists to fund it</span>
+      <p>Individual state parties can build this infrastructure, as Michigan proved. Nothing systematically capitalizes the build in other states.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">PROBLEM 02</span>
+      <span class="hd">No standing entity translates the lessons</span>
+      <p>The specialist-to-county ratio, the training curriculum, the recruitment pipeline — all of it lives in Michigan's institutional memory. None of it has been codified into a transferable model.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">PROBLEM 03</span>
+      <span class="hd">No permanent talent or brand layer above the state</span>
+      <p>No national organization's full-time job is identifying which state parties are underperforming, why, and what a rebuild costs — the way Heritage and its peers do continuously for the right.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:40px">Machines built over decades. No center-left answer.</h3>
+  <p class="prose">Three forces oppose each other — while reinforcing each other's hold on the political system. None of them has a counterpart on the center-left.</p>
+
+  <div class="grid g3">
+    <div class="card fill">
+      <span class="idx">FORCE 01</span>
+      <span class="hd">Conservative dark money movement</span>
+      <p class="tiny" style="font-family:'Libre Franklin',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px">Focus</p>
+      <p>"Crushing liberal dominance" across institutions.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">FORCE 02</span>
+      <span class="hd">Far right &amp; left extremism</span>
+      <p class="tiny" style="font-family:'Libre Franklin',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px">Goal</p>
+      <p>Destroying all institutions built by "the elites" and creating their new "pure" vision of society.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">FORCE 03</span>
+      <span class="hd">Democratic consultant industrial complex</span>
+      <p class="tiny" style="font-family:'Libre Franklin',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:4px">Behavior</p>
+      <p>Protect the status quo and profit enormously cycle after cycle.</p>
+    </div>
+  </div>
+
+  <div class="callout t">
+    <div class="ct">Why this sits here</div>
+    <p>The infrastructure gap is not only an absence. It is an absence <strong>against three organised, well-capitalised forces</strong> — two of them opposed to us, one of them nominally on our side and structurally uninterested in changing.</p>
+  </div>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="04" data-href=""><span class="cn">04</span>Investment Strategy<span class="cs">In production</span></span>
+      <span class="chap todo" data-chapter="C" data-href=""><span class="cn">08</span>Operations &amp; Financing<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 03 · PROOF ══════════════════════ -->
+<section class="wrap page" id="proof">
+  <div class="folio"><span class="no">03</span><span class="nm">Proof of Concept</span><span class="of">Executive Summary · 3 of 7</span></div>
+
+  <div class="dek">Evidence</div>
+  <h2>Our model is not theoretical. It has been built successfully twice at the state level.</h2>
+
+  <p class="lead prose">Michigan proves it at the field-organizing level. Colorado proves it at the capital-and-institution level, and has now run for more than two decades.</p>
+
+  <!-- MICHIGAN -->
+  <h3 style="margin-top:38px">Proof point one — Project 83, Michigan</h3>
+  <div class="prose">
+    <p>In 2017, Michigan Democratic Party Chair Lavora Barnes (The 80 cofounder) launched <strong>Project 83</strong> — named for Michigan's 83 counties — on three tenets: refocus on local parties and local candidates, retrain local leadership and grassroots activists, rebuild the Democratic brand in communities the party had ceded. Not a cycle-specific field program: a standing network of regional Political Specialists working year-round.</p>
+  </div>
+
+  <figure>
+    <div class="fh">
+      <span class="fn">Figure 2</span>
+      <span class="ft">What permanent field infrastructure delivered in Michigan</span>
+    </div>
+    <div class="fb">
+      <ul class="tl">
+        <li>
+          <span class="yr">2017</span>
+          <div class="bd"><span class="hd">Project 83 launched</span><p>Permanent, year-round organizing infrastructure stood up inside the state party's existing budget — largely improvised.</p></div>
+        </li>
+        <li>
+          <span class="yr">2018</span>
+          <div class="bd"><span class="hd">Governorship recaptured</span><p>Held a U.S. Senate seat and gained state legislative seats, in the cycle nationally understood as a referendum on the first Trump term.</p></div>
+        </li>
+        <li>
+          <span class="yr">2020</span>
+          <div class="bd"><span class="hd">Michigan delivered for the presidential ticket</span><p>Swept statewide offices despite a pandemic that disrupted traditional field organizing.</p></div>
+        </li>
+        <li>
+          <span class="yr">2022</span>
+          <div class="bd"><span class="hd">First Democratic trifecta in 40 years</span><p>Both chambers, plus all three statewide row offices.</p></div>
+        </li>
+        <li class="miss">
+          <span class="yr">2024</span>
+          <div class="bd"><span class="hd">The trifecta broke — the state House flipped back</span><p>A genuine setback. Standing infrastructure did not guarantee a win in a hostile national environment.</p></div>
+        </li>
+        <li>
+          <span class="yr">2026</span>
+          <div class="bd"><span class="hd">The infrastructure survived the cycle that beat it</span><p>County party organizations, the trained volunteer base, and the candidate pipeline did not disappear with the loss. Outside investment is already returning to Michigan specifically because that underlying infrastructure is still standing.</p></div>
+        </li>
+      </ul>
+    </div>
+    <figcaption><b>Source:</b> The 80 / C4 Framework V2, §2 (The Proof of Concept: Project 83).</figcaption>
+  </figure>
+
+  <div class="callout g">
+    <div class="ct">Why The 2024 Michigan Loss is Important</div>
+    <p>Infrastructure that survives a bad cycle instead of evaporating with it is the entire argument for treating this as an investment rather than a campaign expense. Project 83 is proof the model works. It is also proof the model needs patient, multi-cycle capital to reach its potential — Michigan built it inside one state party's existing budget. <strong>The 80's job is to do deliberately, with dedicated capital and a national blueprint, what Michigan discovered by necessity.</strong></p>
+  </div>
+
+  <!-- COLORADO -->
+  <h3 style="margin-top:40px">Proof point two — the Colorado Blueprint</h3>
+  <div class="prose">
+    <p>Colorado was, as recently as 2002, one of the most reliably Republican states in the country. Beginning in 2004, a small group of donors — Pat Stryker, Tim Gill, Jared Polis, and Rutt Bridges, organized with the help of retired university president Albert Yates — built a coordinated funding vehicle that became the <strong>Colorado Democracy Alliance</strong>. The strategy and the reversal it produced are chronicled in the 2010 book <em>The Blueprint: How the Democrats Won Colorado</em>, co-authored by a Democratic journalist and a former Republican state legislator.</p>
+  </div>
+
+  <figure>
+    <div class="fh">
+      <span class="fn">Figure 3</span>
+      <span class="ft">Twenty years of durable control from a four-year build</span>
+      <span class="fs">Colorado's partisan trajectory alongside the funding vehicle that produced it. The Alliance has outlasted every one of its original architects' individual campaigns.</span>
+    </div>
+    <div class="fb">
+      <svg class="chart" viewBox="0 0 980 232" role="img" aria-label="Timeline from 2002 to 2026. Colorado is reliably Republican through 2004, the Colorado Democracy Alliance is founded in 2004, both legislative chambers flip in 2004, the governorship is added in 2006, and a Democratic trifecta has substantially held for two decades to the present.">
+        <!-- axis -->
+        <line x1="50" y1="186" x2="940" y2="186" stroke="var(--ink-3)" stroke-width="1.5"/>
+        <g font-size="11" font-weight="600" fill="var(--ink-3)" text-anchor="middle">
+          <text x="50" y="208">2002</text><text x="198" y="208">2006</text><text x="346" y="208">2010</text>
+          <text x="495" y="208">2014</text><text x="643" y="208">2018</text><text x="791" y="208">2022</text>
+          <text x="940" y="208">2026</text>
+        </g>
+        <g stroke="var(--grid)"><line x1="198" y1="182" x2="198" y2="190"/><line x1="346" y1="182" x2="346" y2="190"/><line x1="495" y1="182" x2="495" y2="190"/><line x1="643" y1="182" x2="643" y2="190"/><line x1="791" y1="182" x2="791" y2="190"/></g>
+
+        <!-- state-of-play band -->
+        <rect x="50" y="122" width="124" height="34" rx="5" fill="var(--s2)" opacity=".18"/>
+        <rect x="50" y="122" width="124" height="34" rx="5" fill="none" stroke="var(--s2)" stroke-width="1.5"/>
+        <text x="112" y="144" font-size="11.5" font-weight="700" fill="var(--s2)" text-anchor="middle">Reliably GOP</text>
+
+        <rect x="180" y="122" width="760" height="34" rx="5" fill="var(--s1)" opacity=".16"/>
+        <rect x="180" y="122" width="760" height="34" rx="5" fill="none" stroke="var(--s1)" stroke-width="1.5"/>
+        <text x="560" y="144" font-size="12.5" font-weight="700" fill="var(--s1)" text-anchor="middle">Democratic trifecta substantially held — two decades and counting</text>
+
+        <!-- alliance bar -->
+        <rect x="124" y="166" width="816" height="7" rx="3.5" fill="var(--s1)" opacity=".35"/>
+        <text x="124" y="182" font-size="10.5" font-weight="700" fill="var(--ink-3)">COLORADO DEMOCRACY ALLIANCE — FOUNDED 2004, STILL ACTIVE, THIRD PRESIDENT</text>
+
+        <!-- milestone flags -->
+        <g stroke="var(--s1)" stroke-width="1.5" stroke-dasharray="3 3">
+          <line x1="124" y1="62" x2="124" y2="120"/><line x1="198" y1="80" x2="198" y2="120"/>
+        </g>
+        <circle cx="124" cy="60" r="6" fill="var(--s1)"/><circle cx="198" cy="78" r="6" fill="var(--s1)"/>
+        <text x="138" y="50" font-size="12.5" font-weight="700" fill="var(--ink)">2004 — Both legislative chambers flip</text>
+        <text x="138" y="66" font-size="11.5" font-weight="500" fill="var(--ink-2)">Pooled donor capital directed to 30+ aligned organizations</text>
+        <text x="212" y="84" font-size="12.5" font-weight="700" fill="var(--ink)">2006 — Governorship added</text>
+
+        <!-- 20 year brace -->
+        <path d="M124,24 L124,16 L940,16 L940,24" fill="none" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <text x="532" y="11" font-size="11" font-weight="700" fill="var(--ink-3)" text-anchor="middle">22 YEARS OF COMPOUNDING</text>
+      </svg>
+    </div>
+    <figcaption><b>Source:</b> The 80 / C4 Framework V2, §3 (A Second Proof of Concept: The Colorado Blueprint); <i>The Blueprint: How the Democrats Won Colorado</i> (2010).</figcaption>
+  </figure>
+
+  <h4 style="margin-top:28px">What Colorado Actually Built</h4>
+  <div class="grid g4">
+    <div class="card"><span class="hd">A funding collaborative</span><p>Members-only, directing pooled donor capital to more than 30 aligned nonprofits and independent-expenditure groups — instead of one donor writing one check to one campaign.</p></div>
+    <div class="card"><span class="hd">One disciplined message</span><p>A consistent statewide message carried across every funded organization, rather than each group improvising its own.</p></div>
+    <div class="card"><span class="hd">Locally-rooted candidates</span><p>Contenders with genuine ties to their communities, not outside recruits parachuted into targeted districts.</p></div>
+    <div class="card"><span class="hd">Big-tent discipline</span><p>A shared willingness to set aside internal policy disagreements and unify around winning — The 80's own "Rebuild the Big Tent" principle.</p></div>
+  </div>
+
+  <div class="callout a">
+    <div class="ct">The two proofs together</div>
+    <p>Project 83 shows what disciplined, permanent field infrastructure looks like inside a single state party. Colorado shows what happens when that infrastructure is capitalized deliberately, across a full ecosystem of organizations, and sustained for decades. <strong>The 80 is built to combine both: field infrastructure funded the way Colorado's donor coalition funded its own.</strong></p>
+  </div>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="B" data-href=""><span class="cn">02.2</span>State Models — Pilot First<span class="cs">In production</span></span>
+      <span class="chap todo" data-chapter="01" data-href=""><span class="cn">03</span>Civic &amp; Political<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 04 · SOLUTION ══════════════════════ -->
+<section class="wrap page" id="solution">
+  <div class="folio"><span class="no">04</span><span class="nm">What We Are Building</span><span class="of">Executive Summary · 4 of 7</span></div>
+
+  <div class="dek">The solution</div>
+  <h2>One 501(c)(4) with three integrated functions</h2>
+
+  <p class="lead prose">Permanent capacity, assembled from the contested states outward.</p>
+
+  <div class="grid g3">
+    <div class="card fill">
+      <span class="idx">FUNCTION 01</span>
+      <span class="hd">Capital Investment &amp; Operational Support</span>
+      <p>Funds and stands up the organizer and regional-lead field structure. Partners with, invests in, or acquires existing state infrastructure rather than duplicating it.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">FUNCTION 02</span>
+      <span class="hd">Agency: Media &amp; Technology</span>
+      <p>Shared research, message testing, and creative capacity, so every state build carries one brand and real-time data instead of reinventing a messaging shop from zero.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">FUNCTION 03</span>
+      <span class="hd">Civic &amp; Political</span>
+      <p>Recruits, trains, and supports the candidates the infrastructure exists to elect. Rebuilds local parties and incubates activist networks.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:38px">Why a 501(c)(4)</h3>
+  <p class="prose">The entity structure follows directly from the problem being solved.</p>
+  <ol class="num" style="max-width:none">
+    <li><strong>Multi-year commitments.</strong> A (c)(4) can hold and deploy capital on a five-year horizon rather than being bound to election-cycle reporting and spending patterns — which is what permanent infrastructure requires and what campaign committees structurally cannot do.</li>
+    <li><strong>Partisan flexibility within a social-welfare mission.</strong> A (c)(4) can engage in political activity as part of — not the entirety of — its mission, allowing The 80 to fund party infrastructure, civic organizations, and issue advocacy under one roof rather than fragmenting the work across single-purpose vehicles.</li>
+    <li><strong>Donor structure suited to patient capital.</strong> Contributions are not tax-deductible as charitable gifts. That is the tradeoff for the flexibility above, and it is stated plainly in every donor conversation and in the closing disclosure of every 80 presentation.</li>
+    <li><strong>A holding structure for a portfolio, not a single program.</strong> The 80 is meant to partner with, invest in, and in some cases acquire existing organizations — state parties, civic orgs, policy shops — rather than build every function from scratch. A (c)(4) is structured for exactly that.</li>
+  </ol>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <a class="chap live" href="https://claude.ai/artifact/TKMieGDahzwwgc8UwzzzBY" target="_blank" rel="noopener"><span class="cn">05</span>The 80 Engine<span class="cs">Live</span></a>
+      <a class="chap live" href="https://julesstephanie-cpu.github.io/eighty-influencer/#brief" target="_blank" rel="noopener"><span class="cn">06</span>The Influencer Network<span class="cs">Live</span></a>
+      <span class="chap todo" data-chapter="C" data-href=""><span class="cn">08</span>Operations &amp; Financing<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 05 · WHERE ══════════════════════ -->
+<section class="wrap page" id="states">
+  <div class="folio"><span class="no">05</span><span class="nm">Where We Build, and In What Order</span><span class="of">Executive Summary · 5 of 7</span></div>
+
+  <div class="dek">Selection &amp; sequencing</div>
+  <h2>Not every state should be built the same way or in the same order</h2>
+
+  <p class="lead prose">What persuades a voter in Michigan will not persuade one in Georgia. Four criteria we will use to choose how and when to invest in a state.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th style="width:26%">Criterion</th><th>Guiding question</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Electoral leverage</strong></td><td>Does building durable infrastructure here plausibly change control of a legislative chamber, a statewide office, or a congressional delegation within two cycles?</td></tr>
+        <tr><td><strong>Existing infrastructure condition</strong></td><td>Is the state party a foundation to invest in and strengthen — a "performance turnaround," as Michigan's own party once was — or a near-total rebuild from the ground up?</td></tr>
+        <tr><td><strong>Cost to stand up coverage</strong></td><td>What does a beachhead-to-full-coverage build cost, driven primarily by county count and the organizer-to-county ratio validated in Michigan?</td></tr>
+        <tr><td><strong>Proof-of-concept value</strong></td><td>Will an early, visible win here make the next state easier to fund — i.e., does it demonstrate the model to future donors the way Michigan now demonstrates it to us?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <div class="ct">What comes next</div>
+    <p>Individual state models — organizer counts, regional-lead management layers, phased budgets, and timelines — are built one state at a time against this framework, starting with the pilot track.</p>
+  </div>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="A" data-href=""><span class="cn">02.1</span>State Selection &amp; Sequencing<span class="cs">In production</span></span>
+      <span class="chap todo" data-chapter="B" data-href=""><span class="cn">02.2</span>State Models — Pilot First<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 06 · HOW ══════════════════════ -->
+<section class="wrap page" id="build">
+  <div class="folio"><span class="no">06</span><span class="nm">The Operating Model</span><span class="of">Executive Summary · 6 of 7</span></div>
+
+  <div class="dek">How a state gets built</div>
+  <h2>Rome Wasn't Built in a Day</h2>
+
+  <p class="lead prose">Michigan did not staff all 83 counties on day one. Project 83 grew into full coverage over multiple cycles. The 80 replicates that discipline deliberately rather than rediscovering it under pressure.</p>
+
+  <figure>
+    <div class="fh">
+      <span class="fn">Figure 4</span>
+      <span class="ft">Three phases to a statewide saturation</span>
+      <span class="fs">Coverage extends only as each phase demonstrates results and unlocks the next round of capital. Michigan's 83 counties are the reference end-state; each state's phase sizes are set by its own county count and competitiveness weighting.</span>
+    </div>
+    <div class="fb">
+      <svg class="chart" viewBox="0 0 980 300" role="img" aria-label="A three-phase coverage ramp. Phase one, beachhead, places field staff in the highest-leverage counties only. Phase two, expansion, extends to secondary-priority counties. Phase three, full coverage, is a permanent statewide presence, the Project 83 end state of 83 counties in Michigan.">
+        <!-- baseline -->
+        <line x1="60" y1="216" x2="930" y2="216" stroke="var(--ink-3)" stroke-width="1.5"/>
+        <text x="30" y="150" font-size="11" font-weight="700" fill="var(--ink-3)" text-anchor="middle" transform="rotate(-90 30 150)">COUNTY COVERAGE</text>
+
+        <!-- phase 1 -->
+        <rect x="60" y="164" width="272" height="52" rx="4" fill="var(--seq-1)"/>
+        <rect x="60" y="164" width="272" height="52" rx="4" fill="none" stroke="var(--ground)" stroke-width="2"/>
+        <text x="76" y="196" font-size="14" font-weight="800" fill="#fff">PHASE 1 · BEACHHEAD</text>
+        <text x="60" y="240" font-size="12.5" font-weight="700" fill="var(--ink)">Highest-leverage counties only</text>
+        <text x="60" y="258" font-size="12" fill="var(--ink-2)">Competitiveness-weighted, not evenly distributed.</text>
+        <text x="60" y="275" font-size="12" fill="var(--ink-2)">Proves the model; generates the first visible wins.</text>
+
+        <!-- phase 2 -->
+        <rect x="336" y="116" width="272" height="100" rx="4" fill="var(--seq-2)"/>
+        <rect x="336" y="116" width="272" height="100" rx="4" fill="none" stroke="var(--ground)" stroke-width="2"/>
+        <text x="352" y="172" font-size="14" font-weight="800" fill="#fff">PHASE 2 · EXPANSION</text>
+        <text x="336" y="240" font-size="12.5" font-weight="700" fill="var(--ink)">Secondary-priority counties</text>
+        <text x="336" y="258" font-size="12" fill="var(--ink-2)">Extends as the pilot demonstrates results and</text>
+        <text x="336" y="275" font-size="12" fill="var(--ink-2)">unlocks the next round of capital.</text>
+
+        <!-- phase 3 -->
+        <rect x="612" y="52" width="318" height="164" rx="4" fill="var(--seq-3)"/>
+        <rect x="612" y="52" width="318" height="164" rx="4" fill="none" stroke="var(--ground)" stroke-width="2"/>
+        <text x="628" y="140" font-size="14" font-weight="800" fill="var(--ink)">PHASE 3 · FULL COVERAGE</text>
+        <text x="612" y="240" font-size="12.5" font-weight="700" fill="var(--ink)">Statewide, permanent presence</text>
+        <text x="612" y="258" font-size="12" fill="var(--ink-2)">The Project 83 end-state — sustained by national</text>
+        <text x="612" y="275" font-size="12" fill="var(--ink-2)">investment plus state-party self-sufficiency.</text>
+
+        <!-- michigan reference -->
+        <line x1="930" y1="52" x2="948" y2="52" stroke="var(--ink-3)" stroke-width="1.2"/>
+        <text x="880" y="40" font-size="12.5" font-weight="800" fill="var(--ink)" text-anchor="end">83 counties in Michigan</text>
+        <text x="880" y="24" font-size="11" font-weight="600" fill="var(--ink-3)" text-anchor="end">reference end-state</text>
+
+        <!-- gate markers -->
+        <g fill="var(--ink-3)">
+          <text x="334" y="106" font-size="10.5" font-weight="800" text-anchor="middle" letter-spacing=".8">CAPITAL GATE</text>
+          <text x="610" y="42" font-size="10.5" font-weight="800" text-anchor="middle" letter-spacing=".8">CAPITAL GATE</text>
+        </g>
+        <g stroke="var(--ink-3)" stroke-width="1" stroke-dasharray="3 3">
+          <line x1="334" y1="112" x2="334" y2="216"/><line x1="610" y1="48" x2="610" y2="216"/>
+        </g>
+      </svg>
+      <span class="schematic">Phase sizes illustrative — set per state by county count and competitiveness</span>
+    </div>
+    <figcaption><b>Source:</b> The 80 / C4 Framework V2, §8 (The Operating Model: Beachhead, Not Big Bang). The 83-county figure is Michigan's actual county count and Project 83's full-coverage end-state.</figcaption>
+  </figure>
+
+  <div class="callout a">
+    <div class="ct">What phasing does that a lump-sum build cannot</div>
+    <p>It gives donors a visible, fundable proof point before committing to full-state cost — and it mirrors exactly how Michigan's own model actually developed, which is the strongest evidence available that it works.</p>
+  </div>
+
+  <h3>Foundational operating tenets — from day one, in every state</h3>
+  <ul class="tick" style="max-width:none;column-count:2;column-gap:38px">
+    <li>Use local talent wherever possible; create a mentor/coach role while a young organizer comes up to speed.</li>
+    <li>Have every organizer become a notary.</li>
+    <li>Monthly, in-person, statewide organizer meetings — moved around the state, held midweek, each including a novel skill class such as first aid or self-defense.</li>
+    <li>A weekly call where organizers share successes and challenges and get input from the group.</li>
+    <li>Encourage cooperative programming between regions.</li>
+    <li>Debrief volunteers and staff from the top levels down — it makes people feel valued and drives participation.</li>
+    <li>Humanize the organization. Our people should be the face of the movement.</li>
+    <li>Keep diversity a top priority at every level.</li>
+  </ul>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="B" data-href=""><span class="cn">02.2</span>State Models — Pilot First<span class="cs">In production</span></span>
+      <a class="chap live" href="https://claude.ai/artifact/TKMieGDahzwwgc8UwzzzBY" target="_blank" rel="noopener"><span class="cn">05</span>The 80 Engine<span class="cs">Live</span></a>
+      <span class="chap todo" data-chapter="B" data-href=""><span class="cn">08</span>Operations &amp; Financing<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ 07 · THE ASK ══════════════════════ -->
+<section class="wrap page" id="ask">
+  <div class="folio"><span class="no">07</span><span class="nm">The Ask</span><span class="of">Executive Summary · 7 of 7</span></div>
+
+  <div class="dek">Capital position</div>
+  <h2>$30 million to carry us through launch and into 2027 at full speed</h2>
+
+  <p class="lead prose">Anyone asked to invest in infrastructure is owed a look at the infrastructure — and an understanding of the return.</p>
+
+  <figure>
+    <div class="fh">
+      <span class="fn">Figure 5</span>
+      <span class="ft">Where the raise stands today</span>
+      <span class="fs">$1.5 million is committed against a $30 million target. The senior team, the operating and legal structure, and three field efforts are already in place.</span>
+    </div>
+    <div class="fb">
+      <svg class="chart" viewBox="0 0 980 190" role="img" aria-label="A progress bar showing 1.5 million dollars committed out of a 30 million dollar target, approximately 5 percent, with 28.5 million dollars remaining to raise.">
+        <!-- track -->
+        <rect x="40" y="58" width="900" height="44" rx="6" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1"/>
+        <!-- committed: 1.5/30 = 5% of 900 = 45 -->
+        <rect x="40" y="58" width="45" height="44" rx="6" fill="var(--s1)"/>
+        <rect x="87" y="58" width="2" height="44" fill="var(--ground)"/>
+
+        <!-- committed label -->
+        <line x1="62" y1="52" x2="62" y2="30" stroke="var(--s1)" stroke-width="1.5"/>
+        <text x="40" y="24" font-size="21" font-weight="800" fill="var(--s1)">$1.5M</text>
+        <text x="112" y="24" font-size="12" font-weight="700" fill="var(--ink-2)">committed</text>
+
+        <!-- remaining label -->
+        <text x="940" y="24" font-size="21" font-weight="800" fill="var(--ink)" text-anchor="end">$30M</text>
+        <text x="836" y="24" font-size="12" font-weight="700" fill="var(--ink-2)" text-anchor="end">target</text>
+        <text x="512" y="86" font-size="13.5" font-weight="700" fill="var(--ink-2)" text-anchor="middle">$28.5M remaining</text>
+
+        <!-- scale -->
+        <g font-size="10.5" font-weight="600" fill="var(--ink-3)" text-anchor="middle">
+          <text x="40" y="122">$0</text><text x="190" y="122">$5M</text><text x="340" y="122">$10M</text>
+          <text x="490" y="122">$15M</text><text x="640" y="122">$20M</text><text x="790" y="122">$25M</text>
+          <text x="940" y="122">$30M</text>
+        </g>
+        <g stroke="var(--border-2)" stroke-width="1">
+          <line x1="190" y1="104" x2="190" y2="110"/><line x1="340" y1="104" x2="340" y2="110"/>
+          <line x1="490" y1="104" x2="490" y2="110"/><line x1="640" y1="104" x2="640" y2="110"/>
+          <line x1="790" y1="104" x2="790" y2="110"/>
+        </g>
+
+        <!-- already standing -->
+        <text x="40" y="156" font-size="11" font-weight="800" fill="var(--ink-3)" letter-spacing="1.2">ALREADY STANDING, BEFORE THIS RAISE CLOSES</text>
+        <g font-size="12.5" font-weight="600" fill="var(--ink-2)">
+          <text x="40" y="178">Senior team in place  ·  Operating and legal structure stood up  ·  Three efforts live in the field</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption><b>Source:</b> The 80 executive summary. Figures are as reported by The 80 and current as of this document's date.</figcaption>
+  </figure>
+
+  <div class="grid g3">
+    <div class="card fill">
+      <span class="idx">WHY US</span>
+      <span class="hd">The model has been run twice, successfully</span>
+      <p>Project 83 was built by a member of this team. The Colorado Democracy Alliance has been compounding for twenty-two years. The 80 combines both: field infrastructure funded the way Colorado's donor coalition funded its own.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">WHY NOW</span>
+      <span class="hd">2028 and beyond will be decided by what gets built now</span>
+      <p>This raise carries The 80 through launch and into 2027 at full speed. Infrastructure built on a cycle timeline arrives too late to matter; the beachhead has to exist before the cycle it is meant to win.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">WHY YOU</span>
+      <span class="hd">Patient capital is the one input the model cannot improvise</span>
+      <p>Michigan proved the model works inside an ordinary state-party budget. It also proved the model needs multi-cycle capital to reach its potential. That is the gap a donor closes here.</p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="align-items:start;margin-top:26px">
+    <div class="callout a" style="max-width:none;margin:0">
+      <div class="ct">ROI Targets</div>
+      <p>The 80 targets a return in excess of any 10× benchmark, measured against the cost of rebuilding equivalent capability from scratch each cycle. <strong>The underlying model, assumptions, and reporting cadence sit in the Operations &amp; Financing chapter</strong>.</p>
+    </div>
+
+    <div class="callout t" style="max-width:none;margin:0;grid-column:1">
+      <div class="ct">What this document is, and is not</div>
+      <p>This is not the five-year plan. It is the case for why a five-year plan, funded like an investment portfolio rather than an election-cycle expense, is the only version of this that has ever actually worked.</p>
+    </div>
+
+    <div style="grid-column:2;grid-row:1 / span 2">
+    <h3 style="margin-top:0">What this framework unlocks next</h3>
+    <p style="max-width:none">With this scaffolding in place, the next step is building individual, fully costed state models — organizer counts, regional-lead management layers, phased budgets, and timelines — for each state on the priority track, starting with the pilot. Each state model will:</p>
+    <ul class="bare" style="max-width:none">
+      <li>Apply the organizer-to-county ratio and phased beachhead structure defined here.</li>
+      <li>Layer in state-specific adjustments — population density, competitiveness of target counties, condition of existing party infrastructure — rather than a flat per-county formula.</li>
+      <li>Report against the same three-function framework, so donors can compare state opportunities on a consistent basis.</li>
+    </ul>
+    </div>
+  </div>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="A" data-href=""><span class="cn">08</span>Operations &amp; Financing<span class="cs">In production</span></span>
+      <span class="chap todo" data-chapter="04" data-href=""><span class="cn">04</span>Investment Strategy<span class="cs">In production</span></span>
+      
+</section>
+
+
+<!-- ══════════════════════ 02 · MODEL STATE ══════════════════════ -->
+<section class="wrap page" id="modelstate">
+  <div class="folio"><span class="no">02</span><span class="nm">Model State</span><span class="of">State Template</span></div>
+
+  <div class="dek">The state template</div>
+  <h2>What one state costs, built from the bottom up</h2>
+
+  <p class="lead prose">Every state The 80 funds is the same template, scaled to that state's county count and competitiveness. Build the template once, cost it honestly, and the next state is a repeat of the first — not a fresh negotiation.</p>
+
+  <div class="calc">
+    <div class="ch">
+      <span class="ck">Inputs</span>
+      <span class="clive">Live model</span>
+    </div>
+    <div class="crow">
+      <label for="m-rd"><span>Regional Directors</span><span class="cv" id="m-rd-v">12</span></label>
+      <input type="range" id="m-rd" min="2" max="25" step="1" value="12">
+      <p class="chint">Not entry-level: multi-cycle campaign managers, mature and self-sufficient, recruited from the region or nearby. County count and competitiveness set the number — Michigan's 83 counties sit near the top of this range.</p>
+    </div>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th style="width:30%">Line</th><th>Basis</th><th class="n">Annual</th></tr></thead>
+      <tbody>
+        <tr><td><strong>State Executive Director</strong></td><td>1 × $175K — from the state; runs campaigns; hard-side political operations</td><td class="n" id="m-ed">$175K</td></tr>
+        <tr><td><strong>Regional Directors</strong></td><td><span id="m-rd-basis">12 × $60K</span> — multi-cycle campaign managers</td><td class="n" id="m-rdtot">$720K</td></tr>
+        <tr><td>Salaries subtotal</td><td>Base salary, field program</td><td class="n" id="m-sal">$895K</td></tr>
+        <tr><td>Healthcare &amp; benefits</td><td>25% loaded on base — medical, dental, vision, employer taxes</td><td class="n" id="m-ben">$224K</td></tr>
+        <tr class="tone-info"><td><strong>Field program</strong></td><td>The permanent organizing layer in one state</td><td class="n"><strong id="m-field">$1.12M</strong></td></tr>
+        <tr><td><strong>The 80 Engine</strong></td><td>State director plus a seven-person contract creative team</td><td class="n">$1.25M</td></tr>
+        <tr><td><strong>Influencer network</strong></td><td>Statewide advocate platform and technology stack</td><td class="n">$76K</td></tr>
+        <tr class="tone-success"><td><strong>People &amp; platform total</strong></td><td><span id="m-headcount">21</span> people working the state continuously</td><td class="n"><strong id="m-total">$2.45M</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ctot">
+    <span class="ctl">People &amp; platform, one state</span>
+    <span class="ctv" id="m-total-big">—</span>
+  </div>
+
+  <div class="callout w">
+    <div class="ct">What this figure does not yet include</div>
+    <p>The table above is <strong>people and platform only</strong>. It does not include paid media, event production, candidate travel, polling and primary research, legal and compliance counsel, office space, or software and equipment.</p>
+    <p>The September 2026 planning estimate for a full state launch — people, platform <em>and</em> program — was <strong>$6M per state, rising toward $10M with amplification</strong>. That figure is being rebuilt from the bottom up state by state; it is not yet a costed model, and this document does not present it as one.</p>
+  </div>
+
+  <h3>How the template scales</h3>
+  <div class="grid g3">
+    <div class="card"><span class="idx">STEP 01</span><span class="hd">Cost the first state</span><p>Build the model in one state against real county counts and real salaries, and prove the number by spending it.</p></div>
+    <div class="card"><span class="idx">STEP 02</span><span class="hd">Repeat, don't reinvent</span><p>The second state is the same template with different inputs. The negotiation is about county count and competitiveness, not about what a state build is.</p></div>
+    <div class="card"><span class="idx">STEP 03</span><span class="hd">Compare like with like</span><p>Because every state reports against the same lines, a donor evaluating two states is comparing the same categories of spend.</p></div>
+  </div>
+
+  <div class="callout a">
+    <div class="ct">Why a template rather than a plan per state</div>
+    <p>Michigan's model was discovered by necessity, inside one state party's budget, and it lives in that party's institutional memory. A template is how that becomes transferable — the specialist-to-county ratio, the training curriculum, and the recruitment pipeline written down once and applied everywhere.</p>
+  </div>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="A" data-href=""><span class="cn">02.1</span>State Selection &amp; Sequencing<span class="cs">In production</span></span>
+      <span class="chap todo" data-chapter="B" data-href=""><span class="cn">02.2</span>State Models — Pilot First<span class="cs">In production</span></span>
+      <span class="chap todo" data-chapter="05" data-href=""><span class="cn">08</span>Operations &amp; Financing<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════ RESEARCH · SIX FOCUS STATES ══════════════════════ -->
+<section class="wrap page" id="focus">
+  <div class="folio"><span class="nm">Research &amp; Policy</span><span class="of">Six Focus States</span></div>
+
+  <div class="dek">Where the research runs first</div>
+  <h2>In 2027, The 80 is focusing on six states that make a difference</h2>
+
+  <p class="lead prose">We are conducting deep research, building specific plans, and developing ground-up partnerships to invigorate the center-left in these states.</p>
+
+  <div class="stats">
+    <div class="stat"><span class="v">6</span><span class="l">Priority states for 2027</span></div>
+    <div class="stat"><span class="v a">48.6M</span><span class="l">Registered voters across them</span></div>
+    <div class="stat"><span class="v">0</span><span class="l">Won by Democrats in 2024</span></div>
+  </div>
+
+  <div class="tw">
+    <table>
+      <thead>
+        <tr><th style="width:13%">State</th><th class="n" style="width:9%">Reg. voters</th><th style="width:34%">Why this state</th><th style="width:20%">Presidential &amp; delegation</th><th>2027 outlook</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Arizona</strong></td><td class="n">4.4M</td>
+          <td>True battleground. A laboratory for whether a practical center-left coalition can hold in a fast-changing border state — and how affordability, immigration, abortion and trust in democracy move suburban, Latino, Native and younger voters.</td>
+          <td>’08 R · ’20 D · ’24 R<br><span class="tiny">Gov D · Sen 2D · House 6R/3D</span></td>
+          <td>Toss-up. Slow drift toward Democrats.</td>
+        </tr>
+        <tr>
+          <td><strong>Georgia</strong></td><td class="n">8.1M</td>
+          <td>Closely divided, with a multiracial, metro-driven Democratic coalition. Tests how to rebuild support among Black voters and persuadable suburban voters from a center-left frame.</td>
+          <td>’08 R · ’20 D · ’24 R<br><span class="tiny">Gov R · Sen 2D · House 9R/5D</span></td>
+          <td>Democrats hold Senate; governor a coin flip.</td>
+        </tr>
+        <tr>
+          <td><strong>Iowa</strong></td><td class="n">2.2M</td>
+          <td>A test of whether Democrats can reconnect with rural, working-class and small-town voters in a state now decisively Republican. Proving ground for an economic-populist message built on cost of living, opportunity, competence and respect.</td>
+          <td>’08 D · ’20 R · ’24 R<br><span class="tiny">Gov R · Sen 2R · House 4R/0D</span></td>
+          <td>Movement toward the center; Democrats within reach.</td>
+        </tr>
+        <tr class="tone-info">
+          <td><strong>Michigan</strong></td><td class="n">7.4M</td>
+          <td>Rebuilding the working- and middle-class Democratic brand in a tight-margin state. Tests whether center-left messages can unite union members, young, Black and disaffected non-college voters around economic security.</td>
+          <td>’08 D · ’20 D · ’24 R<br><span class="tiny">Gov D · Sen 2D · House 7R/6D</span></td>
+          <td>Toss-up; open Senate and governor seats.</td>
+        </tr>
+        <tr>
+          <td><strong>North Carolina</strong></td><td class="n">7.8M</td>
+          <td>Converting demographic growth and suburban gains into statewide wins. Identifies the message and turnout formula needed to close the persistent gap among Black voters, suburban moderates and rural persuadables.</td>
+          <td>’08 D · ’20 R · ’24 R<br><span class="tiny">Gov D · Sen 2R · House 10R/4D</span></td>
+          <td>Trending Democratic; Cooper favored to flip the Senate seat.</td>
+        </tr>
+        <tr>
+          <td><strong>Texas</strong></td><td class="n">18.7M</td>
+          <td>Opportunity state: large, diverse, fast-growing and increasingly shaped by internal Republican conflict. A practical Democratic agenda can make new inroads with suburban families, Latino voters and hyper-pragmatic voters.</td>
+          <td>’08 R · ’20 R · ’24 R<br><span class="tiny">Gov R · Sen 2R · House 24R/13D</span></td>
+          <td>Republican-held but tightening; GOP primary fracturing.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="tiny" style="max-width:none">Registered voters: state Secretaries of State. Presidential results: FEC 2008, Ballotpedia 2020, FEC 2024. Delegation as of August 2026. Outlooks cite Cook, Sabato and state polling as noted in the source deck; they are forecasts, not results. <strong>Michigan is highlighted because it is the state where the model has already been run.</strong></p>
+
+  <div class="callout a">
+    <div class="ct">Why these six, and why now</div>
+    <p>Democrats lost all six in the 2024 presidential election. They are not a safe-seat portfolio — they are the states where a durable center-left majority either gets built or does not. The research runs here first because the investment follows it here first.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════ RESEARCH · THE 80% AGENDA ══════════════════════ -->
+<section class="wrap page" id="agenda">
+  <div class="folio"><span class="nm">Research &amp; Policy</span><span class="of">The 80% Agenda</span></div>
+
+  <div class="dek">The evidence behind the name</div>
+  <h2>The median Democratic voter is not who the party is assumed to be</h2>
+
+  <p class="lead prose">John Avlon's 80% Agenda research examines the actual composition of the Democratic coalition and the policy positions that command supermajority support inside it. Its finding is the foundation of The 80's thesis: the agreement already exists.</p>
+
+  <div class="grid g4">
+    <div class="card fill"><span class="idx">COALITION</span><span class="v" style="font-size:31px;font-weight:800;display:block;letter-spacing:-.03em;font-family:'Libre Franklin',sans-serif">11%</span><p style="margin-top:7px">of the Democratic coalition is the DSA-aligned bloc. <span class="tiny">Manhattan Institute, Feb 2026</span></p></div>
+    <div class="card fill"><span class="idx">COALITION</span><span class="v" style="font-size:31px;font-weight:800;display:block;letter-spacing:-.03em;font-family:'Libre Franklin',sans-serif">47%</span><p style="margin-top:7px">is the moderate bloc — more than four times larger. <span class="tiny">Manhattan Institute, Feb 2026</span></p></div>
+    <div class="card fill"><span class="idx">DIRECTION</span><span class="v" style="font-size:31px;font-weight:800;display:block;letter-spacing:-.03em;font-family:'Libre Franklin',sans-serif">2:1</span><p style="margin-top:7px">Democrats who want the party to move toward the center outnumber those who want it to move left.</p></div>
+    <div class="card fill"><span class="idx">CREDIBILITY</span><span class="v" style="font-size:31px;font-weight:800;display:block;letter-spacing:-.03em;font-family:'Libre Franklin',sans-serif">34%</span><p style="margin-top:7px">of swing-state working-class voters trust Democrats to fight for people like them. Republicans: 50%. <span class="tiny">PPI / YouGov, 2024</span></p></div>
+  </div>
+
+  <div class="pull">
+    <q>Working-class voters rendered a harsh verdict on Democrats. They see the party as weak, unpatriotic and out of touch with their everyday economic struggles and values.</q>
+    <span class="src">Will Marshall, President, Progressive Policy Institute</span>
+  </div>
+
+  <h3>Positions with 80%+ Democratic support — and cross-partisan reach</h3>
+  <p class="prose">Every item below has been confirmed at 80% or higher Democratic support in at least one major independent poll. The right-hand columns are where the agenda stops being a base-consolidation exercise and starts being a majority.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th style="width:44%">Position</th><th class="n">Dem</th><th class="n">Rep</th><th class="n">Ind</th><th>Signal</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Earned pathway to citizenship for Dreamers</strong></td><td class="n">93%</td><td class="n">71%</td><td class="n">74%</td><td>Strongest cross-partisan finding in the agenda</td></tr>
+        <tr><td><strong>Universal background checks for gun sales</strong></td><td class="n">92%+</td><td class="n">~80%</td><td class="n">—</td><td>The most consistently polled 80%+ issue in America</td></tr>
+        <tr><td><strong>Federal paid family and medical leave</strong></td><td class="n">90%</td><td class="n">76%</td><td class="n">79%</td><td>U.S. is the only wealthy democracy without it</td></tr>
+        <tr><td><strong>Protecting and expanding Social Security</strong></td><td class="n">90%</td><td class="n">75%</td><td class="n">—</td><td>AARP, NASI and U.S. Chamber all aligned</td></tr>
+        <tr><td><strong>Campaign finance reform / limits on outside spending</strong></td><td class="n">90%</td><td class="n">81%</td><td class="n">—</td><td>Among the most consistent long-term findings</td></tr>
+        <tr><td><strong>Banning congressional stock trading</strong></td><td class="n">88%</td><td class="n">87%</td><td class="n">81%</td><td>#2 issue for voters 18–34, behind cost of living</td></tr>
+        <tr><td><strong>Kids online safety / safeguards for minors</strong></td><td class="n">88%</td><td class="n">87%</td><td class="n">82%</td><td>Near-unanimity across all three partisan groups</td></tr>
+        <tr><td><strong>Restoring and expanding affordable broadband</strong></td><td class="n">86%</td><td class="n">—</td><td class="n">—</td><td>Rural communities are the primary beneficiaries</td></tr>
+        <tr><td><strong>Antitrust enforcement / breaking up monopolies</strong></td><td class="n">~85%</td><td class="n">—</td><td class="n">—</td><td>~78% overall</td></tr>
+        <tr class="tone-warning"><td><strong>Protecting U.S. farmland from foreign adversary purchases</strong></td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td><strong>Senate 91–7.</strong> Virtually absent from Democratic messaging despite the record</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout a">
+    <div class="ct">What the data actually shows</div>
+    <p>The party's path to durable national majorities runs through the suburban and rural center, not the urban activist base. The 80% Agenda items are the bridge: issues that unite the moderate and progressive-liberal blocs while offering genuine appeal to persuadable independents and soft Republicans.</p>
+    <p class="tiny" style="margin-top:10px">Source: <em>The 80% Agenda for REAL Democrats</em>, John Avlon, June 2026. Underlying polling includes Pew, KFF, Gallup, Quinnipiac, Navigator Research, UMD/PPC, AARP/NASI, PPI/YouGov and the Manhattan Institute.</p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════ RESEARCH · BRAND ══════════════════════ -->
+<section class="wrap page" id="brand">
+  <div class="folio"><span class="nm">Research &amp; Policy</span><span class="of">Brand Research</span></div>
+
+  <div class="dek">Research first</div>
+  <h2>Every dollar answers to hard data and signals from the ground</h2>
+
+  <p class="lead prose">The 80 starts with baseline polling across the six priority states, in partnership with Ipsos and Texas A&amp;M under Dr. Cliff Young. That baseline becomes the Democratic Brand Tracker — the source of truth for turning brand damage into a measurable trend line.</p>
+
+  <div class="grid g3">
+    <div class="card fill"><span class="idx">01 · EXEMPLAR</span><p>This workstream is the exemplar of how The 80 uses research to inform outreach, decision-making and investment from 2027 onward. Every downstream dollar answers to research and data.</p></div>
+    <div class="card fill"><span class="idx">02 · FIRST STEP</span><p>Baseline polling across six priority states with Ipsos and Texas A&amp;M, led by Dr. Cliff Young — the foundation driving the approach for the next decade.</p></div>
+    <div class="card fill"><span class="idx">03 · DEEPEN</span><p>Get the baseline right, then build the Democratic Brand Tracker: the instrument that turns deep brand-damage headwinds into measurable tailwinds.</p></div>
+  </div>
+
+  <h3>The starting position</h3>
+  <div class="stats">
+    <div class="stat"><span class="v">31%</span><span class="l">Democratic Party favorability — one point above Quinnipiac's all-time low since 2008</span></div>
+    <div class="stat"><span class="v">70%</span><span class="l">Democratic-leaning voters dissatisfied with their party and leadership</span></div>
+    <div class="stat"><span class="v">+9 → −1</span><span class="l">Four-year swing in party-ID advantage, 2020 to 2024</span></div>
+  </div>
+  <p class="tiny" style="max-width:none">Quinnipiac, March 2026 · NYT/Siena, May 2026 · Gallup annual party affiliation, 2020–2024. Favorability has fallen 15 points from 46% at the start of the 2020 cycle, and 44% of self-identified Democrats say they are unsatisfied with their own party.</p>
+
+  <figure>
+    <div class="fh">
+      <span class="fn">Figure 6</span>
+      <span class="ft">The Democratic Party, measured as a brand</span>
+      <span class="fs">Percentage agreeing the organization "delivers on what it promises." Consumer and civic brands are included as reference points, not competitors — they establish what a functioning institutional brand scores.</span>
+    </div>
+    <div class="fb">
+      <div class="legend">
+        <span><i style="background:var(--s1)"></i>Democratic Party</span>
+        <span><i style="background:var(--s2)"></i>Republican Party</span>
+        <span><i style="background:var(--bar-n)"></i>Reference brands</span>
+      </div>
+      <svg class="chart" viewBox="0 0 980 352" role="img" aria-label="Horizontal bar chart of the percentage agreeing each organization delivers on what it promises. American Red Cross 57, Apple 49, Nike 47, Whole Foods 38, AARP 35, Republican Party 30, Tesla 30, Democratic Party 23.">
+        <g stroke="var(--grid)" stroke-width="1">
+          <line x1="355" y1="28" x2="355" y2="316"/><line x1="545" y1="28" x2="545" y2="316"/>
+          <line x1="735" y1="28" x2="735" y2="316"/><line x1="925" y1="28" x2="925" y2="316"/>
+        </g>
+        <g font-size="13" font-weight="600" fill="var(--ink-2)" text-anchor="end">
+          <text x="152" y="53">American Red Cross</text>
+          <text x="152" y="89">Apple</text>
+          <text x="152" y="125">Nike</text>
+          <text x="152" y="161">Whole Foods</text>
+          <text x="152" y="197">AARP</text>
+          <text x="152" y="233" font-weight="700" fill="var(--s2)">Republican Party</text>
+          <text x="152" y="269">Tesla</text>
+          <text x="152" y="305" font-weight="800" fill="var(--s1)">Democratic Party</text>
+        </g>
+        <g>
+          <rect x="165" y="36" width="722" height="24" rx="4" fill="var(--bar-n)"/>
+          <rect x="165" y="72" width="621" height="24" rx="4" fill="var(--bar-n)"/>
+          <rect x="165" y="108" width="595" height="24" rx="4" fill="var(--bar-n)"/>
+          <rect x="165" y="144" width="481" height="24" rx="4" fill="var(--bar-n)"/>
+          <rect x="165" y="180" width="443" height="24" rx="4" fill="var(--bar-n)"/>
+          <rect x="165" y="216" width="380" height="24" rx="4" fill="var(--s2)"/>
+          <rect x="165" y="252" width="380" height="24" rx="4" fill="var(--bar-n)"/>
+          <rect x="165" y="288" width="291" height="24" rx="4" fill="var(--s1)"/>
+        </g>
+        <g font-size="13.5" font-weight="800" fill="var(--ink)" font-variant-numeric="tabular-nums">
+          <text x="899" y="53">57%</text><text x="798" y="89">49%</text><text x="772" y="125">47%</text>
+          <text x="658" y="161">38%</text><text x="620" y="197">35%</text>
+          <text x="557" y="233" fill="var(--s2)">30%</text><text x="557" y="269">30%</text>
+          <text x="468" y="305" fill="var(--s1)">23%</text>
+        </g>
+        <line x1="165" y1="316" x2="940" y2="316" stroke="var(--ink-3)" stroke-width="1.5"/>
+        <g font-size="11" font-weight="600" fill="var(--ink-3)" text-anchor="middle">
+          <text x="165" y="336">0%</text><text x="355" y="336">15%</text><text x="545" y="336">30%</text>
+          <text x="735" y="336">45%</text><text x="925" y="336">60%</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption><b>Source:</b> Democratic Brand Tracker baseline, as presented in The 80 capital allocation memo. Reference brands are included to calibrate the scale; they are not competitors for the same audience.</figcaption>
+  </figure>
+
+  <h3>The full attribute set</h3>
+  <p class="prose">The pattern holds across every attribute tested. The Democratic Party trails the Republican Party on five of seven, and trails every reference brand on competence measures.</p>
+
+  <div class="tw">
+    <table>
+      <thead><tr><th style="width:26%">Attribute</th><th class="n">Dem</th><th class="n">Rep</th><th class="n">Red Cross</th><th class="n">Apple</th><th class="n">Nike</th><th class="n">Whole Foods</th><th class="n">AARP</th><th class="n">Tesla</th></tr></thead>
+      <tbody>
+        <tr><td>Delivers on what it promises</td><td class="n">23</td><td class="n">30</td><td class="n">57</td><td class="n">49</td><td class="n">47</td><td class="n">38</td><td class="n">35</td><td class="n">30</td></tr>
+        <tr><td>Can be trusted to do the right thing</td><td class="n">25</td><td class="n">25</td><td class="n">59</td><td class="n">30</td><td class="n">28</td><td class="n">27</td><td class="n">32</td><td class="n">18</td></tr>
+        <tr class="tone-warning"><td>Produces high-quality results</td><td class="n">19</td><td class="n">27</td><td class="n">57</td><td class="n">59</td><td class="n">54</td><td class="n">45</td><td class="n">29</td><td class="n">34</td></tr>
+        <tr><td>Makes a positive difference</td><td class="n">30</td><td class="n">30</td><td class="n">66</td><td class="n">42</td><td class="n">36</td><td class="n">37</td><td class="n">40</td><td class="n">28</td></tr>
+        <tr><td>Is clear about what it stands for</td><td class="n">32</td><td class="n">44</td><td class="n">62</td><td class="n">46</td><td class="n">44</td><td class="n">36</td><td class="n">41</td><td class="n">34</td></tr>
+        <tr class="tone-warning"><td>Is a well-run organization</td><td class="n">18</td><td class="n">27</td><td class="n">50</td><td class="n">57</td><td class="n">44</td><td class="n">29</td><td class="n">33</td><td class="n">36</td></tr>
+        <tr><td>Understands people like me</td><td class="n">30</td><td class="n">29</td><td class="n">42</td><td class="n">32</td><td class="n">31</td><td class="n">24</td><td class="n">29</td><td class="n">16</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="tiny" style="max-width:none">Figures are percentage agreement. Highlighted rows are the two lowest Democratic scores — both competence measures rather than values measures.</p>
+
+  <div class="callout t">
+    <div class="ct">What the tracker is for</div>
+    <p>National averages mask granular collapse. The tracker exists so that every state investment starts from a measured baseline and can be judged against movement in that baseline — rather than against whether the cycle happened to go well.</p>
+  </div>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="07" data-href=""><span class="cn">07</span>Research &amp; Public Opinion<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════ GO DEEPER ══════════════════════ -->
+<section class="wrap page" id="deeper">
+  <div class="folio"><span class="nm">Go Deeper</span><span class="of">The four build chapters</span></div>
+
+  <div class="dek">Beyond the summary</div>
+  <h2>The four chapters that carry the build detail</h2>
+
+  <p class="lead prose">Everything above is the case. These four are the work: what each function does, who staffs it, what it costs, and how it is held to a result. Two are live and open in a new tab; the rest publish here as they are finished.</p>
+
+  <ul class="toc">
+    <li class="prod">
+      <a href="#" data-chapter="03" aria-disabled="true">
+        <span class="cn">03</span>
+        <span><span class="tt">Civic &amp; Political</span><span class="td">Permanent field organizing, candidate recruitment and training, local party rebuilding, activist network incubation, and The Chairs Project. Flagged as one of the two most immediate content gaps.</span></span>
+        <span class="cs">In production</span>
+      </a>
+    </li>
+    <li class="prod">
+      <a href="#" data-chapter="04" aria-disabled="true">
+        <span class="cn">04</span>
+        <span><span class="tt">Investment Strategy</span><span class="td">How The 80 selects states, stages builds, and partners with, invests in, or acquires existing infrastructure rather than duplicating it — and how each dollar is held to a result.</span></span>
+        <span class="cs">In production</span>
+      </a>
+    </li>
+    <li class="live">
+      <a href="https://claude.ai/artifact/TKMieGDahzwwgc8UwzzzBY" target="_blank" rel="noopener">
+        <span class="cn">05</span>
+        <span><span class="tt">The 80 Engine</span><span class="td">The permanent communications operation — research, narrative strategy, creative, content, media and technology. Includes the full staffing budget and the state-by-state cost model.</span></span>
+        <span class="cs">Live</span>
+      </a>
+    </li>
+    <li class="live">
+      <a href="https://julesstephanie-cpu.github.io/eighty-influencer/#brief" target="_blank" rel="noopener">
+        <span class="cn">06</span>
+        <span><span class="tt">The Influencer Network</span><span class="td">The advocate and creator network — recruitment, consent architecture, briefings, amplification thresholds, technology stack, and the 90-day launch plan.</span></span>
+        <span class="cs">Live</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="callout a">
+    <div class="ct">How these fit together in one state</div>
+    <p>Civic &amp; Political puts the organizers on the ground. The Engine gives them a message and the material to carry it. The Influencer Network puts that message in the mouths of people the state already trusts. Investment Strategy decides which state gets all three, and when. <strong>The Model State section costs the combination.</strong></p>
+  </div>
+</section>
+
+<!-- ══════════════════════ OPERATIONS & FINANCING ══════════════════════ -->
+<section class="wrap page" id="ops">
+  <div class="folio"><span class="nm">Operations &amp; Financing</span><span class="of">Budget · Team · Legal</span></div>
+
+  <div class="dek">How the organization runs</div>
+  <h2>Budget, governance and legal structure in one place</h2>
+
+  <p class="lead prose">Three workstreams that used to sit apart. They belong together: what it costs, who is accountable for it, and the structure it is legally permitted to happen inside.</p>
+
+  <div class="grid g3">
+    <div class="card fill">
+      <span class="idx">08 · A</span><span class="hd">Budget &amp; ROI</span>
+      <p>The consolidated budget, the return model and its assumptions, and the reporting cadence donors receive. Built bottom-up from the state template rather than top-down from a target.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">08 · B</span><span class="hd">Team &amp; Governance</span>
+      <p>Who is accountable for what, the senior team already in place, and the governance structure above it.</p>
+    </div>
+    <div class="card fill">
+      <span class="idx">08 · C</span><span class="hd">Legal &amp; Compliance</span>
+      <p>The 501(c)(4) architecture, entity relationships, campaign-finance treatment by jurisdiction, and disclosure practice. C3/C4 structure and counsel remain active workstreams.</p>
+    </div>
+  </div>
+
+  <div class="callout w">
+    <div class="ct">On how the budget is framed</div>
+    <p>The budget is not a staff roster. It includes feasibility work, state leadership and planning, and the investment components that make a state build function — and state costs vary materially, so any single per-state figure needs its framing carried with it.</p>
+  </div>
+
+  <div class="locked" data-reveals="ops-detail">
+    <div class="lk">Restricted section</div>
+    <h4>Detailed budget and allocation</h4>
+    <p>The line-item budget, per-state allocation and reserve assumptions are held behind a second access code. Ask The 80 directly if you need it.</p>
+    <form autocomplete="off">
+      <input type="password" placeholder="Access code" aria-label="Access code" autocomplete="off">
+      <button type="submit">Unlock</button>
+    </form>
+    <div class="lerr" role="status" aria-live="polite"></div>
+  </div>
+
+  <div id="ops-detail" hidden>
+    <h3>Detailed allocation</h3>
+    <div class="callout t">
+      <div class="ct">Placeholder — awaiting the consolidated budget</div>
+      <p>This block is wired and gated, but the line-item budget has not been supplied yet. When the consolidated budget is ready it drops in here and is visible only to readers holding the second code.</p>
+      <p>Working figures from the September 2026 planning session, for context and not as a costed model: <strong>roughly $6M per state to launch, rising toward $10M with amplification</strong>; a total ask in the <strong>$35M–$60M</strong> range against a prior senior-team framing of $60M.</p>
+    </div>
+  </div>
+
+  <div class="chapbar">
+    <span class="ck">Goes deeper in</span>
+    <div class="chaplist">
+      <span class="chap todo" data-chapter="08" data-href=""><span class="cn">08</span>Operations &amp; Financing<span class="cs">In production</span></span>
+      <span class="chap todo" data-chapter="04" data-href=""><span class="cn">04</span>Investment Strategy<span class="cs">In production</span></span>
+    </div>
+  </div>
+</section>
+
+</main>
+</div><!-- /#doc -->
+
+<script>
+/* ============================================================
+   SECOND ACCESS CODE — for sensitive budget / "boiler room" blocks.
+   Change this line (separate from the main access phrase above).
+   ============================================================ */
+var DETAIL_CODE = "boilerroom";
+/* ========================================================== */
+
+(function(){
+  "use strict";
+
+  var MAP = [
+    { g:"front",    label:"Front",                  items:[["cover","Cover"],["book","Contents"]] },
+    { g:"exec",     label:"01 Executive Summary",   items:[["stakes","01 Stakes"],["gap","02 The Gap"],["proof","03 Proof"],["solution","04 What We Build"],["states","05 Where"],["build","06 How"],["ask","07 The Ask"]] },
+    { g:"model",    label:"02 Model State",         items:[["modelstate","State Template"]] },
+    { g:"research", label:"Research & Policy",      items:[["focus","Six Focus States"],["agenda","The 80% Agenda"],["brand","Brand Research"]] },
+    { g:"deeper",   label:"Go Deeper",              items:[["deeper","Go Deeper"]] },
+    { g:"ops",      label:"Operations & Financing", items:[["ops","Operations & Financing"]] }
+  ];
+
+  var prog   = document.getElementById("prog");
+  var rail   = document.getElementById("rail");
+  var pager  = document.getElementById("pager");
+  var groups = document.getElementById("groups");
+  var totop  = document.getElementById("totop");
+
+  // build the rail once
+  var html = "";
+  MAP.forEach(function(grp){
+    html += '<div class="rg"><div class="rgh">' + grp.label + "</div>";
+    grp.items.forEach(function(it){
+      html += '<a href="#' + it[0] + '" data-s="' + it[0] + '">' + it[1] + "</a>";
+    });
+    html += "</div>";
+  });
+  html += '<button class="rtop" id="railtop" type="button">&uarr; Back to contents</button>';
+  rail.innerHTML = html;
+
+  var flat = [];
+  MAP.forEach(function(grp){ grp.items.forEach(function(it){ flat.push({id:it[0], label:it[1], g:grp.g}); }); });
+
+  function sectionRow(g){
+    var grp = MAP.filter(function(x){ return x.g === g; })[0];
+    if (!grp || grp.items.length < 2) { pager.innerHTML = ""; return; }
+    pager.innerHTML = grp.items.map(function(it){
+      return '<a href="#' + it[0] + '" data-s="' + it[0] + '">' + it[1] + "</a>";
+    }).join("");
+  }
+
+  var currentGroup = null;
+
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    prog.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+
+    var mark = h.scrollTop + 170, cur = flat[0];
+    for (var i = 0; i < flat.length; i++){
+      var el = document.getElementById(flat[i].id);
+      if (el && el.offsetTop <= mark) cur = flat[i];
+    }
+
+    if (cur.g !== currentGroup){ currentGroup = cur.g; sectionRow(cur.g); }
+
+    var links = rail.querySelectorAll("a[data-s]");
+    for (var j = 0; j < links.length; j++){
+      links[j].classList.toggle("on", links[j].getAttribute("data-s") === cur.id);
+    }
+    var plinks = pager.querySelectorAll("a[data-s]");
+    for (var k = 0; k < plinks.length; k++){
+      plinks[k].classList.toggle("on", plinks[k].getAttribute("data-s") === cur.id);
+    }
+    var glinks = groups.querySelectorAll("a[data-g]");
+    for (var m = 0; m < glinks.length; m++){
+      glinks[m].classList.toggle("on", glinks[m].getAttribute("data-g") === cur.g);
+    }
+
+    totop.classList.toggle("show", h.scrollTop > 700);
+    rail.classList.toggle("hide", cur.g === "front" && h.scrollTop < 200);
+  }
+
+  addEventListener("scroll", onScroll, {passive:true});
+  addEventListener("resize", onScroll);
+
+  function goContents(){
+    var el = document.getElementById("book");
+    if (el) el.scrollIntoView({behavior:"smooth", block:"start"});
+  }
+  totop.addEventListener("click", goContents);
+  var rt = document.getElementById("railtop");
+  if (rt) rt.addEventListener("click", goContents);
+
+  // placeholder chapter links shouldn't jump the page
+  document.querySelectorAll('a[aria-disabled="true"]').forEach(function(a){
+    a.addEventListener("click", function(e){ e.preventDefault(); });
+  });
+
+  // ---- second-code gated blocks ----
+  function norm(v){ return String(v || "").trim().toLowerCase(); }
+  document.querySelectorAll(".locked").forEach(function(box){
+    var form = box.querySelector("form");
+    var input = box.querySelector("input");
+    var err = box.querySelector(".lerr");
+    var target = document.getElementById(box.getAttribute("data-reveals"));
+    if (!form || !target) return;
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      if (norm(input.value) === norm(DETAIL_CODE)){
+        target.hidden = false;
+        box.hidden = true;
+        try { sessionStorage.setItem("the80-detail", "1"); } catch (x) {}
+      } else {
+        err.textContent = "That code doesn't match. Try again.";
+        input.value = "";
+        input.focus();
+      }
+    });
+    try {
+      if (sessionStorage.getItem("the80-detail") === "1"){ target.hidden = false; box.hidden = true; }
+    } catch (x) {}
+  });
+
+  // ---- model state calculator ----
+  var rd = document.getElementById("m-rd");
+  if (rd){
+    var ED_BASE = 175000, RD_BASE = 60000, BEN = 0.25, ENGINE = 1248000, INFLU = 76000;
+    function money(v){
+      if (v >= 1000000) return "$" + (v/1000000).toFixed(2).replace(/\.00$/,"") + "M";
+      return "$" + Math.round(v/1000) + "K";
+    }
+    function recalc(){
+      var nrd = parseInt(rd.value, 10);
+      var salaries = ED_BASE + RD_BASE * nrd;
+      var benefits = salaries * BEN;
+      var field = salaries + benefits;
+      var total = field + ENGINE + INFLU;
+      document.getElementById("m-rd-v").textContent = nrd;
+      document.getElementById("m-sal").textContent = money(salaries);
+      document.getElementById("m-ben").textContent = money(benefits);
+      document.getElementById("m-field").textContent = money(field);
+      document.getElementById("m-total").textContent = money(total);
+      document.getElementById("m-total-big").textContent = money(total);
+      document.getElementById("m-rd-basis").textContent = nrd + " \u00d7 $60K";
+      document.getElementById("m-rdtot").textContent = money(RD_BASE * nrd);
+      document.getElementById("m-headcount").textContent = (nrd + 9);
+    }
+    rd.addEventListener("input", recalc);
+    recalc();
+  }
+
+  onScroll();
+})();
+</script>
+
+
+<script>
+/* ============================================================
+   ACCESS PHRASE — change the line below, then save and re-upload.
+   This is the ONLY line you need to edit.
+   ============================================================ */
+var ACCESS_PHRASE = "donorbook";
+/* ========================================================== */
+
+(function(){
+  var gate  = document.getElementById('gate');
+  var doc   = document.getElementById('doc');
+  var form  = document.getElementById('gate-form');
+  var input = document.getElementById('gate-input');
+  var err   = document.getElementById('gate-err');
+  var KEY   = 'the80-ok';
+
+  function norm(v){ return String(v || '').trim().toLowerCase(); }
+
+  function unlock(){
+    gate.hidden = true;
+    doc.hidden  = false;
+    try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+  }
+
+  try { if (sessionStorage.getItem(KEY) === '1') unlock(); } catch (e) {}
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (norm(input.value) === norm(ACCESS_PHRASE)) {
+      unlock();
+    } else {
+      err.textContent = "That phrase doesn't match. Try again.";
+      input.value = '';
+      input.focus();
+    }
+  });
+
+  if (!gate.hidden) input.focus();
+})();
+</script>
+
+</body>
+</html>
